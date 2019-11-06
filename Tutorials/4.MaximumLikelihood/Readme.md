@@ -28,8 +28,8 @@ In the tab Analysis Results you can monitor your jobs. With our example file, a 
 
 Once a job is finished, you can select it by checking the corresponding box and then download the selected jobs as a zip file. This zip file will contain the results of your run, including the Run Log and the Full Result which are also accessible in the webserver.
 
-Suffix	     Explanation
-- .iqtree)	   Full result of the run, this is the main report file
+   Suffix	     Output File Explanation
+- .iqtree	     Full result of the run, this is the main report file
 - .log	       Run log
 - .treefile	   Maximum likelihood tree in NEWICK format, can be visualized with treeviewer programs
 - .svg	       Graphical tree representation in SVG format, done with ete view
