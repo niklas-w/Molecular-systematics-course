@@ -12,6 +12,10 @@ In this intense course we will introduce the basics of Phylogenetics, covering b
 
 ## **Index**
 
-[Course slides]()
+[Course slides](./Lectures/)
 
-[Tutorials]
+[Data used in the course](../Data/)
+
+[Tutorials](../Tutorials/)
+
+
