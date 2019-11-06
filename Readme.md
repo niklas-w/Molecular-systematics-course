@@ -20,9 +20,9 @@ In this intense course we will introduce the basics of Phylogenetics, covering b
 
 [Programs used in the tutorials](../../tree/master/Software/)
   * **Text Editors:**
-   - **TextWrangler** Mac users.
-   - **Notepad++** Windows users.
-   - **Linux:**
+   	- **TextWrangler** Mac users.
+   	- **Notepad++** Windows users.
+   	- **Linux:**
 
  * **MAFFT**
 
