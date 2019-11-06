@@ -3,7 +3,9 @@
 
 * **Text Editors:**
   - **TextWrangler:** Mac users
+  This is a free text editor app for Mac users that you can download from [here](https://apps.apple.com/es/app/textwrangler/id404010395?mt=12) or directly from the App Store. Even if there is many good text editors out there, to avoid hidden character related problems we prefer you to use this one (feel free to use anything else at your own risk).
   - **Notepad++:** Windows users
+  This is a free text editor app for Windows users that you can download from [here](https://notepad-plus-plus.org/downloads/). Other text editors, especially the ones already installed on your operating system (e.g. notepad or wordpad) create hidden characters which are not supported in bioinformatics.
 
 * **MAFFT:** This is a multiple sequence alignment program for unix-like operating systems. We will be using an online version of the program at the following link: [https://mafft.cbrc.jp/alignment/server/](https://mafft.cbrc.jp/alignment/server/). But the installation of the program should be easy on all operating systems and optionally you can install it on your personal computer from [here](https://mafft.cbrc.jp/alignment/software/).
 
