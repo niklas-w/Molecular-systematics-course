@@ -15,7 +15,7 @@
 
 * **PartitionFinder2:** This is a program to do both model selection and choose the best partitionning scheme for your dataset. you can download it from the next link: [http://www.robertlanfear.com/partitionfinder/](http://www.robertlanfear.com/partitionfinder/).
 
-* **RAxML:**
+* **RAxML:** We will be using a GUI (Graphical User Interface) version of this program (raxmlGUI2) that you can have to download from the following link: [https://antonellilab.github.io/raxmlGUI/](https://antonellilab.github.io/raxmlGUI/).
 
 * **IQ-TREE:** The IQ-TREE version 1.7 (currently available only as beta) or greater will be required as earlier versions did not allow the calculations of gene and site concordance factors. The latest versions of IQ-TREE for Mac OS X, Linux, or Windows can be found on [https://github.com/Cibiv/IQ-TREE/releases](https://github.com/Cibiv/IQ-TREE/releases). To install IQ-TREE on any of these systems, download the version for your operating system, and decompress this file on your machine if necessary. In the decompressed directory, you'll find a subdirectory named `bin` and inside of this subdirectory should be a file named `iqtree` or `iqtree.exe`.
 
