@@ -17,6 +17,9 @@ In this intense course we will introduce the basics of Phylogenetics, covering b
 [Data used in the course](../../tree/master/Data/)
 
 [Tutorials](../../tree/master/Tutorials/)
+	* [Learn to generate datasets](../../tree/master/Tutorials/1.DatasetManipulation/)
+	* [Learn to generate datasets](../../tree/master/Tutorials/1.DatasetManipulation/)
+	* [Learn to generate datasets](../../tree/master/Tutorials/1.DatasetManipulation/)
 
 [Programs used in the tutorials](../../tree/master/Software/)
   * **Text Editors:**
