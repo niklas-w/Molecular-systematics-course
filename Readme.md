@@ -14,7 +14,9 @@ In this intense course we will introduce the basics of Phylogenetics, covering b
 
 [Course slides](../../tree/master/Lectures)
 
+
 [Data used in the course](../../tree/master/Data/)
+
 
 [Tutorials](../../tree/master/Tutorials/)
 
@@ -22,7 +24,11 @@ In this intense course we will introduce the basics of Phylogenetics, covering b
 	
  * [Align the gene markers](../../tree/master/Tutorials/2.Alignments/)
  
- * [Select the best evolutionary model and partitionning scheme](../../tree/master/Tutorials/1.DatasetManipulation/)
+ * [Select the best evolutionary model and partitionning scheme](../../tree/master/Tutorials/3.ModelSelection/)
+ 
+ * [Maximum likelihood methods](../../tree/master/Tutorials/4.MaximumLikelihood/)
+ 
+ * [Bayesian methods](../../tree/master/Tutorials/5.Bayesian/)
 
 [Programs used in the tutorials](../../tree/master/Software/)
  
