@@ -28,7 +28,9 @@ In this intense course we will introduce the basics of Phylogenetics, covering b
  
  * [Maximum likelihood methods](../../tree/master/Tutorials/4.MaximumLikelihood/)
  
- * [Bayesian methods](../../tree/master/Tutorials/5.Bayesian/)
+ * [Bayesian methods](../../tree/master/Tutorials/5.BayesianInference/)
+ 
+ * [Time calibrate the phylogenies](../../tree/master/Tutorials/6.TimeCalibration/)
 
 [Programs used in the tutorials](../../tree/master/Software/)
  
