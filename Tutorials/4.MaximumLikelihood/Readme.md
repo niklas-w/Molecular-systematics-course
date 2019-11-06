@@ -10,3 +10,4 @@ You can either try out the web server with an example alignment by ticking the c
 After that you can submit the job. If you provide an email address, a notification will be sent to you once the job is finished. In case you don’t specify an email address, you will receive a link in the next step; you can bookmark this link to retrieve your results after the job is finished.
 
 "http://www.iqtree.org/doc/images/tut1.png"
+<p align="center"><img src="http://www.iqtree.org/doc/images/tut1.png" alt="IQTREE" width="600"></p>
