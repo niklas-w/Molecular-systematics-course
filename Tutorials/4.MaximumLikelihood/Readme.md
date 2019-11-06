@@ -1,3 +1,6 @@
-Here instructions of RaxML and IQTree
+# Maximum-Likelihood Phylogenetic Inference
 
-Don´t forget... figtree
+
+Part I: In this tutorial, we wiil analyse the butterfly dataset with with one of the fastest maximum-likelihood based phylogenetic program [IQ-TREE](http://www.iqtree.org) ([Nguyen et al. 2015](https://academic.oup.com/mbe/article/32/1/268/2925592)). IQ-TREE for Windows, MacOSX and Linux can be downloaded here [http://www.iqtree.org/#download] (http://www.iqtree.org/#download).
+
+The quickest is to try out the IQ-TREE web server, where you only need to upload an alignment, choose the options and start the analysis.
