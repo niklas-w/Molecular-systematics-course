@@ -2,13 +2,22 @@
 
 By Wahlberg lab
 
-
-
 ## **Introduction**
 
 In this intense course we will introduce the basics of Phylogenetics, covering both theory and practice. The idea behind the course is that the student gets an overview of the actual methods and learns through hands on exercises to use some of the most used computer programs to study the phylogeny of any group using genetic information.
 
 ## **Program**
+
+| Hours\Days | 13th | 14th | 15th |
+| ---------- | ---- | ---- | ---- |
+| 8:00-9:45 |  |  |  |
+| 9:45-10:15 | Coffee | Coffee | Coffee |
+| 10:15-12:00 |  |  |  |
+| 12:00-13:00 | Lunch | Lunch | Lunch |
+| 13:00-14:00 |  |  |  |
+| 14:00-14:30 | Coffee | Coffee | Coffee |
+| 14:30-16:00 |  |  |  |
+
 
 
 
