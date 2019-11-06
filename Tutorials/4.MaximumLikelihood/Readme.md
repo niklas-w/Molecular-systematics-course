@@ -7,7 +7,7 @@ In this tutorial, we will analyse the butterfly dataset with with one of the fas
 The quickest is to try out the IQ-TREE web server, where you only need to upload an alignment, choose the options and start the analysis.
 
 **Tree inference**
-Tree Inference provides the most frequently used features of IQ-TREE and allows users to carry out phylogenetic analysis on a multiple sequence alignment (MSA). In the most basic case, no more than an MSA file is required to submit the job. Without further input, IQ-TREE will run with the default parameters and auto-detect the sequence type as well as the best-fitting substitution model. Additionally, Ultrafast Bootstrap (Hoang et al., 2018) and the SH-aLRT branch test (Guindon et al., 2010) will be performed.
+Tree Inference provides the most frequently used features of IQ-TREE and allows users to carry out phylogenetic analysis on a multiple sequence alignment (MSA). In the most basic case, no more than an MSA file is required to submit the job. Without further input, IQ-TREE will run with the default parameters and auto-detect the sequence type as well as the best-fitting substitution model. Additionally, Ultrafast Bootstrap [Hoang et al., 2018](https://academic.oup.com/mbe/article/35/2/518/4565479) and the SH-aLRT branch test [Guindon et al., 2010](https://academic.oup.com/sysbio/article/59/3/307/1702850) will be performed.
 You can either try out the web server with an example alignment by ticking the corresponding box or upload your own alignment file. By clicking on ‘Browse’ a dialog will open where you can select your MSA; the file formats Phylip, Fasta, Nexus, Clustal and MSF are supported.
 
 <p align="center"><img src="http://www.iqtree.org/doc/images/tut1.png" alt="IQTREE" width="600"></p>
