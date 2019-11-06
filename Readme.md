@@ -14,8 +14,9 @@ In this intense course we will introduce the basics of Phylogenetics, covering b
 
 [Course slides](../../tree/master/Lectures)
 
-[Data used in the course](../Data/)
+[Data used in the course](../../tree/master/Data/)
 
-[Tutorials](../Tutorials/)
+[Tutorials](../../tree/master/Tutorials/)
 
-
+[Programs used in the tutorials](../../tree/master/Software/)
+  * **RaxML**
