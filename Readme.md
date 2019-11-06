@@ -18,13 +18,15 @@ In this intense course we will introduce the basics of Phylogenetics, covering b
 
 [Tutorials](../../tree/master/Tutorials/)
 
-	* [Learn to generate datasets](../../tree/master/Tutorials/1.DatasetManipulation/)
+ * [Learn to generate datasets](../../tree/master/Tutorials/1.DatasetManipulation/)
 	
-	* [Align the gene markers](../../tree/master/Tutorials/2.Alignments/)
-	* [Learn to generate datasets](../../tree/master/Tutorials/1.DatasetManipulation/)
+ * [Align the gene markers](../../tree/master/Tutorials/2.Alignments/)
+ 
+ * [Select the best evolutionary model and partitionning scheme](../../tree/master/Tutorials/1.DatasetManipulation/)
 
 [Programs used in the tutorials](../../tree/master/Software/)
-  * **Text Editors:**
+ 
+ * **Text Editors:**
    	- **TextWrangler** for Mac users
    	- **Notepad++** for Windows users
    	- **Linux** users not covered
