@@ -59,7 +59,7 @@ Now lets take a look at the *FASTA* files we have created. Open any of them in y
 
 as you can see, each entry is something similar to this:
 
-´´´
+```
 />AF412762.1 Araschnia levana voucher NW39-2 wingless (wg) gene, partial cds
 TCCTGCACCGTTAAAACTTGTTGGATGAGGCTGCCCAGTTTTCGCTCCGTAGGTGATGCGCTAAAAGATC
 GCTTCGATGGAGCGTCGCGGGTCATGATGCCCAATACTGAAATCGAAGCACCCGCACAGCGAAATGACGC
