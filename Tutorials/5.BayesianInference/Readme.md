@@ -24,7 +24,7 @@ After clicking on "Link Trees", you should notice that all cells in the column t
 
 Now with all four rows at the same time we will click on "Link Clock Models". This means that the clock model that we will  apply to all genes. With the relaxed clock model that we will select, it means that some branches are allowed to evolve faster than other branches, but that this variation in rates is not inferred separately for each gene. After clicking on "Link Clock Models", the BEAUti window should look as shown in the screenshot below. You can also edit the name and  assign the name "clock" for instance.
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast3.png" alt="Beast3" width="600"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast4.png" alt="Beast4" width="600"></p>
 
 The settings in the "Partitions" tab are now complete.
 
