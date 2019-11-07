@@ -8,23 +8,28 @@ In this section we will learn to download genetic sequence information from onli
 
 You need to navigate using a web browser to the NCBI’s Genbank. Even if the [link]( https://www.ncbi.nlm.nih.gov/genbank/) is not easy to remember, googling basically any keyword combination containing Genbank will bring you to NCBI quite easily. In Genbank each sequence entry has a unique identification code called ***accession number***. For this exercise, you need to download the sequences of the following accession numbers.
 
-| # | Organism name | COI Acc. N. | EF1a Acc. N. |
-|---|---|---|---|
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
-| 8 |  |  |  |
-| 9 |  |  |  |
-| 10 |  |  |  |
-| 11 |  |  |  |
-| 12 |  |  |  |
-| 13 |  |  |  |
-| 14 |  |  |  |
-| 15 |  |  |  |
+| # | Code | Organism name | COI Acc. N. | EF1a Acc. N. | Wingless Acc. N. |
+|---|---|---|---|---|---|
+| 1 | CP07-44 | Marpesia zerynthia | KM012966 | KM013048 | KM013115 |
+| 2 | NW89-13 | Hypanartia dione | HQ734933 | HQ734953 | HQ734843 |
+| 3 | NW68-11 | Colobura dirce | AY090228 | AY090196 | AY090162 |
+| 4 | NW39-2 | Araschnia levana | AY248780 | AY248805 | AF412762 |
+| 5 | NW82-15 | Asterocampa leilia | KM012928 | AY218257 | AY218275 |
+| 6 | NW63-3 | Aglais urticae | AY248786 | AY248811 | AF412777 |
+| 7 | NW68-5 | Anartia amathea | AY788606 | AY788708 | AY788469 |
+| 8 | NW76-2 | Castilia eranites | AY788617 | AY788722 | AY788483 |
+| 9 | NW73-14 | Melitaea cinxia | AY788656 | AY788776 | AY788536 |
+| 10 | NW85-13 | Junonia coenia | AY788643 | AY248801 | AY248826 |
+| 11 | NW11-4 | Phyciodes cocyta | AF187755 | AY090192 | AY090158 |
+| 12 | NW81-5 | Rhinopalpa polynice | AY788674 | AY788812 | AY788572 |
+| 13 | NW63-21 | Vanessa atalanta | AY090221 | AY090187 | AF412772 |
+| 14 | NW96-5 | Vanessula milca | AY788691 | AY788829 | AY788589 |
+| 15 | NW62-1 | Chlosyne janais | AY788620 | AY788730 | AY788491 |
+| 16 | NW87-3 | Tigridia acesta | AY788684 | AY788822 | AY788582 |
+| 17 | NW130-15 | Baeotus beotus | AY788615 | AY788720 | AY788481 |
+
+
+
 
 Opening the [link]( https://www.ncbi.nlm.nih.gov/genbank/) provided earlier you can see the following (slight differences may exist due to different web browsers and operating systems and the position of the planets and …).
 
