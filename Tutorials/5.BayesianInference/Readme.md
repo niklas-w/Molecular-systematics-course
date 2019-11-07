@@ -58,7 +58,7 @@ Now, open the program BEAST2 and select the file Dataset.xml as input file, as s
 
 # Analyzing the results with Tracer
 
-After the two BEAST2 analyses have completed (or if you decided not to wait and use the output of our analysis instead), open file combined.log in the program Tracer. When the main window has opened, choose Import Trace File... from the File menu and select the file that BEAST has created called xx.log.
+After the two BEAST2 analyses have completed (or if you decided not to wait and use the output of our analysis instead), open file Dataset.log in the program Tracer. When the main window has opened, choose Import Trace File from the File menu and select the file that BEAST has created called Dataset.log.
 
 Remember that MCMC is a stochastic algorithm so the actual numbers will not be exactly the same as those depicted in the figure. On the left hand side is a list of the different quantities that BEAST has logged to file. There are traces for the posterior (this is the natural logarithm of the product of the tree likelihood and the prior density), and the continuous parameters. Selecting a trace on the left brings up analyses for this trace on the right hand side depending on tab that is selected. When first opened, the ‘posterior’ trace is selected and various statistics of this trace are shown under the Estimates tab. In the top right of the window is a table of calculated statistics for the selected trace.
 
@@ -75,22 +75,25 @@ With the posterior probability still being selected in the list at the bottom le
 
 BEAST also produces a posterior sample of phylogenetic time-trees along with its sample of parameter estimates. These need to be summarized using the program TreeAnnotator. This will take the set of trees and find the best supported one. It will then annotate this representative summary tree with the mean ages of all the nodes and the corresponding 95% HPD ranges. It will also calculate the posterior clade probability for each node. Run the TreeAnnotator program and set it up as depicted in Figure 
 
-The burnin is the number of trees to remove from the start of the sample. Unlike Tracer which specifies the number of steps as a burnin, in TreeAn- notator you need to specify the actual number of trees. For this run, you specified a chain length of 5,000,000 steps sampling every 1,000 steps. Thus the trees file will contain 5,000 trees and so to specify a 10% burnin in the top text field.
+The burnin is the number of trees to remove from the start of the sample. Unlike Tracer which specifies the number of steps as a burnin, in Tree Annotator you need to specify the actual number of trees. For this run, you specified a chain length of 5,000,000 steps sampling every 1,000 steps. Thus the trees file will contain 5,000 trees and so to specify a 10% burnin in the top text field.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast13.png" alt="Beast13" width="600"></p>
 
-For the input file, select the trees file that BEAST created and select a file for the output (here we called it butterflies.MCC.tree). Now press Run and wait for the program to finish.
+For the input file, select the trees file that BEAST created and select a file for the output (here we called it Final.tree). Now press Run and wait for the program to finish.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast14.png" alt="Beast14" width="600"></p>
 
-Finally, we can visualize the tree in FigTree. Run this program, and open the butterflies.MCC.tree file by using the Open com- mand in the File menu. The tree should appear.
+Finally, we can visualize the tree in FigTree. Run this program, and open the Final.tree file by using the Open command in the File menu. The tree should appear.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast15.png" alt="Beast15" width="600"></p>
 
-First of all, expend Trees option in the panel, and check Order nodes and choose Ordering by decreasing. Try selecting Node Bars to get node age error bars. Also turn on Branch Labels and select posterior to get it to display the posterior probability for each node. If you use a non strict clock model then under Appearance you can also tell FigTree to colour the branches by the rate. You should end up with something similar to Figure
+To add a time scale to the phylogeny, set a tick next to "Scale Axis" in the menu on the left. Also click the triangle next to it, remove the tick next to "Show grid" in the newly opened menu field, but set a tick next to "Reverse axis" instead. The result is shown in the next screenshot.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast16.png" alt="Beast16" width="600"></p>
 
+To also see the confidence intervals for the age estimates, click on the triangle next to "Node Bars" in the menu on the left. Also set a tick in the checkbox for "Node Bars". Choose the first item from the drop-down menu for "Display", the "height_95%_HPD" The phylogeny should then look as shown below.
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast17.png" alt="Beast17" width="600"></p>
 Question
 
 1. Is this topology consistent with that recovered from IQTREE and RAxML?
