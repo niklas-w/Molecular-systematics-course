@@ -25,11 +25,18 @@ In this intense course we will introduce the basics of Phylogenetics, covering b
 
 [Course slides](../../tree/master/Lectures)
 
+Here we will upload all the files and information shared during the lectures!
+
 
 [Data used in the course](../../tree/master/Data/)
 
+Here you will find the files we create during the course. (If at some point you are lost with a result, try to focus on the class and keep the same rhythm as others, here you can find what you need for next steps.)
+
 
 [Tutorials](../../tree/master/Tutorials/)
+
+Here are deposited the instructions for the appointments and exercises of the course.
+
 
  * [Learn to generate datasets](../../tree/master/Tutorials/1.DatasetManipulation/)
 	
@@ -42,8 +49,11 @@ In this intense course we will introduce the basics of Phylogenetics, covering b
  * [Bayesian methods](../../tree/master/Tutorials/5.BayesianInference/)
  
  * [Time calibrate the phylogenies](../../tree/master/Tutorials/6.TimeCalibration/)
+ 
 
 [Programs used in the tutorials](../../tree/master/Software/)
+
+Here you can find a list of the programs we are going to use and links to where you can download them.
  
  * **Text Editors:**
    	- **TextWrangler** for Mac users
