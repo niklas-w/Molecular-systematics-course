@@ -22,7 +22,7 @@ Select all four rows at the same time and click on "Link Trees" near the top of 
 
 After clicking on "Link Trees", you should notice that all cells in the column to the right, under the heading "Tree" show the same value, "COI-begin", as in the screenshot below. This indicates that they now all share the same tree. You can edit the name and assign the name "tree" for instance.
 
-Now with all four rows at the same time we will click on "Link Clock Models". This means that the clock model that we will  apply to all genes. With the relaxed clock model that we will select, it means that some branches are allowed to evolve faster than other branches, but that this variation in rates is not inferred separately for each gene. After clicking on "Link Clock Models", the BEAUti window should look as shown in the screenshot below. You can also edit the name and  assign the name "clock" for instance.
+Now with all rows at the same time we will click on "Link Clock Models". This means that the clock model that we will  apply to all genes. With the relaxed clock model that we will select, it means that some branches are allowed to evolve faster than other branches, but that this variation in rates is not inferred separately for each gene. After clicking on "Link Clock Models", the BEAUti window should look as shown in the screenshot below. You can also edit the name and  assign the name "clock" for instance.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast4.png" alt="Beast4" width="600"></p>
 
@@ -30,15 +30,15 @@ The settings in the "Partitions" tab are now complete.
 
 Click on the "Site Model" tab next. In this tab we can specify the substitution models for all our partitions. Select the COI-begin partition in the panel at the left and click on the drop-down menu that currently says "JC69". Instead of the Jukes-Cantor model, use the GTR model as suggested by the model selection. Also specify "4" in the field for the "Gamma Category Count" two lines above, to use a gamma model of rate variation with four rate categories. 
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast4.png" alt="Beast4" width="600"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast5.png" alt="Beast5" width="600"></p>
 
 Still in the "Site Model" tab, select all three partitions in the panel at the left of the window. The main part of the window should then show the option "Clone from COI-begin" as in the screenshot below. Click "OK" to use the same site model for EF1a and wingless.
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast5.png" alt="Beast5" width="600"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast6.png" alt="Beast6" width="600"></p>
 
 Next, click on the "Clock Model" tab. From the drop-down menu that currently says "Strict Clock", choose "Relaxed Clock Log Normal" instead. This is the most commonly used relaxed clock model in which substitution rates of individual branches are drawn from a lognormal distribution.
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast6.png" alt="Beast6" width="600"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast7.png" alt="Beast7" width="600"></p>
 
 Click on the "Priors" tab. From the drop-down menu at the very top of the window, select "Birth Death Model" instead of "Yule Model". By doing so we add a parameter to the model for the extinction rate. If we would choose the alternative Yule model (Yule 1925), we would assume that no extinction have ever occurred. As this seems rather unrealistic, the birth-death model (Gernhard 2008) is in most cases the more appropriate choice. 
 
