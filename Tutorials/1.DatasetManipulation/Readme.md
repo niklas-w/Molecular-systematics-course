@@ -25,3 +25,8 @@ You need to navigate using a web browser to the NCBI’s Genbank. Even if the [l
 | 13 |  |  |  |
 | 14 |  |  |  |
 | 15 |  |  |  |
+
+Opening the [link]( https://www.ncbi.nlm.nih.gov/genbank/) provided earlier you can see the following (slight differences may exist due to different web browsers and operating systems and the position of the planets and …).
+
+[[https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/Genbank1.png|alt=octocat]]
+
