@@ -52,7 +52,7 @@ Also change the names of the output files: Click on the triangle to the left of 
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast9.png" alt="Beast9" width="600"></p>
 
-Now, open the program BEAST2 and select the file combined.xml as input file, as shown in the screenshot below. When you click the "Run" button, BEAST2 will start the analysis.
+Now, open the program BEAST2 and select the file Dataset.xml as input file, as shown in the screenshot below. When you click the "Run" button, BEAST2 will start the analysis.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast10.png" alt="Beast10" width="600"></p>
 
