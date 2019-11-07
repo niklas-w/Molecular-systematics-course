@@ -44,5 +44,5 @@ Take a look at it. Try to decipher different parts of it. Now look at the 2 red 
 
 Now ***Create File***! And *Voila!* Congratulations, now you have downloaded your first Fasta file.
 
-Now download all sequences for each gene separately. ***IMPORTANT TIP*** Do not download each accession number separately! Go to this link [www.ncbi.nlm.nih.gov/sites/batchentrez](https://www.ncbi.nlm.nih.gov/sites/batchentrez) and follow the instructions for a batch download ;)
+Now download all sequences for each gene separately. ***IMPORTANT TIP*** Do not download each accession number separately! Go to this link ([www.ncbi.nlm.nih.gov/sites/batchentrez](https://www.ncbi.nlm.nih.gov/sites/batchentrez)) and follow the instructions for a batch download ;)
 
