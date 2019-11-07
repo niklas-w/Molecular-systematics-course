@@ -76,6 +76,8 @@ Finally, we can proceed with *Run* RAxML to start the tree search.
 
 Once a job is finished we have created several files. The file *.tre* is the one that contains the best inferred tree with the boostrap values of the nodes. Open the file *.tre* with the FigTree program. Check the bootstrap values in the tree and compare the corresponding ones with result retrieved from IQTREE analysis.
 
+# Tree visualizations
+
 **Questions**
 
 1. Are the RAxML bootstrap values higher/lower compared to those recovered from the UFBoot2 in IQTREE?
