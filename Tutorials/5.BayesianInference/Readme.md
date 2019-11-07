@@ -2,6 +2,8 @@
 
 # Bayesian Phylogenetic Inference
 
+This tutorial is modified from https://github.com/leimurillo/tutorials/tree/master/bayesian_phylogeny_inference.
+
 Bayesian inference differs from Maximum Likelihood becase take into account prior probabilities. In the context of phylogenetic inference, this means that parameters could be constrained towards values (from fossils or biogeographic evidence) that are considered realistic based on the findings of previous studies on the group of interest. These in turn can then inform the timing in other parts of the phylogeny so that an overall timeline of diversification can be estimated. 
 
 In this tutorial, we will demonstrate how time-calibrated phylogenies can be inferred with programs of the Bayesian software package BEAST2 (Bouckaert et al. 2014). BEAST2 is a cross-platform program for Bayesian phylogenetic analysis of molecular sequences. It estimates rooted, time-measured phylogenies using strict or relaxed molecular clock models. It can be used as a method of reconstructing phylogenies but is also a framework for testing evolutionary hypotheses without conditioning on a single tree topology. BEAST 2 uses Markov chain Monte Carlo (MCMC) to average over tree space, so that each tree is weighted proportional to its posterior probability. BEAST 2 includes a graphical user-interface for setting up standard analyses and a suit of programs for analysing the results. The BEAST2 package, including BEAUti, BEAST2 itself, TreeAnnotator, and other tools can be downloaded from the BEAST2 [website](https://www.beast2.org).
