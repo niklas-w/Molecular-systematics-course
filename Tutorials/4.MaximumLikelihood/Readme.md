@@ -45,13 +45,13 @@ This tutorial was retrieved from the [IQTREE Web-Server](http://www.iqtree.org/d
 
 **Part II**
 
-In the second part of this tutorial we will learn how to perform a ML analysis in RAxML (Randomized Axelerated Maximum Likelihood), which is a program for sequential and parallel Maximum Likelihood based inference of large phylogenetic trees. You can compile the code from [here](https://github.com/stamatak/standard-RAxML) which works with command line. However, for this practical we will use ramlGUI 2.0 ([Edler et al. 2019](https://www.biorxiv.org/content/10.1101/800912v1)), a graphical user interface to RAxML. raxmlGUI 2.0 facilitates phylogenetic analyses by coupling an intuitive interface with the unmatched performance of RAxML. You try to download the graphical interface ramlGUI 2.0 for Windows, MacOSX and Linux [here](https://antonellilab.github.io/raxmlGUI/).
+In the second part of this tutorial we will learn how to perform a ML analysis in RAxML (Randomized Axelerated Maximum Likelihood), which is a program for sequential and parallel Maximum Likelihood based inference of large phylogenetic trees. You can compile the code from [here](https://github.com/stamatak/standard-RAxML) which works with command line. However, for this practical we will use raxmlGUI 2.0 ([Edler et al. 2019](https://www.biorxiv.org/content/10.1101/800912v1)), a graphical user interface to RAxML. raxmlGUI 2.0 facilitates phylogenetic analyses by coupling an intuitive interface with the unmatched performance of RAxML. You try to download the graphical interface ramlGUI 2.0 for Windows, MacOSX and Linux [here](https://antonellilab.github.io/raxmlGUI/).
 
 **Tree inference**
 
-The graphical interface is really friendly. It is very important that you create a folder and place the corresponding data files (one file per gene). By clicking on "LOAD ALIGNMENT" a dialog will open where you can select your MSA. ramlGUI 2.0 only support Phylip format, so should save your files in this format. 
+The graphical interface is really friendly. It is very important that you create a folder and place the corresponding data files (one file per gene). By clicking on "LOAD ALIGNMENT" a dialog will open where you can select your MSA. raxmlGUI 2.0 only support Phylip format, so should save your files in this format. 
 
-RAxML-GUI allows you to do many types of analysis and one of the advantages is that you can select the number of processors to work with and, therefore, on computers with multiple processors, this greatly accelerates the calculation process. 
+raxmlGUI 2.0 allows you to do many types of analysis and one of the advantages is that you can select the number of processors to work with and, therefore, on computers with multiple processors, this greatly accelerates the calculation process. 
  
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML1.png" alt="RAxML1" width="600"></p>
 
@@ -77,6 +77,9 @@ Finally, we can proceed with *Run* RAxML to start the tree search.
 Once a job is finished we have created several files. The file *.tre* is the one that contains the best inferred tree with the boostrap values of the nodes. Open the file *.tre* with the FigTree program. Check the bootstrap values in the tree and compare the corresponding ones with result retrieved from IQTREE analysis.
 
 # Tree visualizations
+
+Open the file .treefile retrieved from IQTREE and .tre from raxmlGUI 2.0 in FigTree and find out the support values. The phylogeny should look more or less as shown in the next screenshot.
+
 
 **Questions**
 
