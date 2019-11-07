@@ -109,7 +109,7 @@ Before anything keep in mind how this file looks like. Very few places look like
 
 Now if you click again on `File` you will see something like this:
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/Aliview.png" alt="Aliview" width="500"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/Aliview2.png" alt="Aliview2" width="500"></p>
 
 As you can see this program allow us to convert/save a sequence file in many different formats which can be used in different programs. Remember this for when we are going to convert the alignment to other file formats than fasta.
 
