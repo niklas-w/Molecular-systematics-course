@@ -69,8 +69,6 @@ Here you can find a list of the programs we are going to use and links to where 
  * **RAxML**
 
  * **IQ-TREE**
-
- * **MrBayes**
 	
  * **FigTree**
 
