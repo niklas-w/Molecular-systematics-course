@@ -46,9 +46,9 @@ Click on the "Priors" tab. From the drop-down menu at the very top of the window
 
 Most of the other items shown in the "Prior" panel correspond to prior densities placed on the parameters of the substitution models for the partitions. You may keep the default priors for each of these parameters. However, to allow time calibration of the phylogeny, a prior density still needs to be specified for at least one divergence time, otherwise BEAST2 would have very little information to estimate branch lengths according to an absolute time scale. 
 
-Continue to the "MCMC" tab, where you can specify the run length. This analysis will require a few hundred million iterations before the MCMC chain reaches full stationarity, which would take several days of run time. For this exercise we recommen that you use a chain length of 5 million states and either run the analysis or cancel the run after following it for some time, and then use output files from our analysis (you'll find the links below) for the rest of the tutorial. 
+Continue to the "MCMC" tab, where you can specify the run length. This analysis will require a few hundred million iterations before the MCMC chain reaches full stationarity, which would take several days of run time. For this exercise we recommen that you use a chain length of 5,000,000 million states and either run the analysis or cancel the run after following it for some time, and then use output files from our analysis (you'll find the links below) for the rest of the tutorial. 
 
-Also change the names of the output files: Click on the triangle to the left of "tracelog" and specify "combined.log" as the name of the log file. In the next field for "Log Every", set the number to "100" so that only every 100 MCMC state is written to the log file. Click on the triangle again, then click on the black triangle to the left of "treelog". Specify "combined.trees" as the name of the tree file and again use "100" as the number in the field for "Log Every". When the window looks as in the below screenshot, click on "Save" in BEAUti's "File" menu, and name the resulting file in XML format combined.xml.
+Also change the names of the output files: Click on the triangle to the left of "tracelog" and specify "combined.log" as the name of the log file. In the next field for "Log Every", set the number to "1,000" so that only every 1,000 MCMC state is written to the log file. Click on the triangle again, then click on the black triangle to the left of "treelog". Specify "combined.trees" as the name of the tree file and again use "1,000" as the number in the field for "Log Every". When the window looks as in the below screenshot, click on "Save" in BEAUti's "File" menu, and name the resulting file in XML format combined.xml.
 
 Now, open the program BEAST2 and select the file combined.xml as input file, as shown in the screenshot below. When you click the "Run" button, BEAST2 will start the analysis.
 
@@ -59,6 +59,22 @@ After the two BEAST2 analyses have completed (or if you decided not to wait and 
 Remember that MCMC is a stochastic algorithm so the actual numbers will not be exactly the same as those depicted in the figure. On the left hand side is a list of the different quantities that BEAST has logged to file. There are traces for the posterior (this is the natural logarithm of the product of the tree likelihood and the prior density), and the continuous parameters. Selecting a trace on the left brings up analyses for this trace on the right hand side depending on tab that is selected. When first opened, the ‘posterior’ trace is selected and various statistics of this trace are shown under the Estimates tab. In the top right of the window is a table of calculated statistics for the selected trace.
 
 Select the clockRate parameter in the lefthand list to look at the average rate of evolution (averaged over the whole tree and all sites). Tracer will plot a (marginal posterior) histogram for the selected statistic and also give you summary statistics such as the mean and median. The 95% HPD stands for highest posterior density interval and represents the most compact interval on the selected parameter that contains 95% of the posterior probability. It can be loosely thought of as a Bayesian analog to a confidence interval. The TreeHeight parameter gives the marginal posterior distribution of the age of the root of the entire tree.
+
+# Obtaining the tree
+
+BEAST also produces a posterior sample of phylogenetic time-trees along with its sample of parameter estimates. These need to be summarized using the program TreeAnnotator. This will take the set of trees and find the best supported one. It will then annotate this representative summary tree with the mean ages of all the nodes and the corresponding 95% HPD ranges. It will also calculate the posterior clade probability for each node. Run the TreeAnnotator program and set it up as depicted in Figure 
+
+The burnin is the number of trees to remove from the start of the sample. Unlike Tracer which specifies the number of steps as a burnin, in TreeAn- notator you need to specify the actual number of trees. For this run, you specified a chain length of 5,000,000 steps sampling every 1,000 steps. Thus the trees file will contain 5,000 trees and so to specify a 10% burnin in the top text field.
+
+For the input file, select the trees file that BEAST created and select a file for the output (here we called it butterflies.MCC.tree). Now press Run and wait for the program to finish.
+
+Finally, we can visualize the tree in FigTree. Run this program, and open the butterflies.MCC.tree file by using the Open com- mand in the File menu. The tree should appear.
+
+First of all, expend Trees option in the panel, and check Order nodes and choose Ordering by decreasing. Try selecting Node Bars to get node age error bars. Also turn on Branch Labels and select posterior to get it to display the posterior probability for each node. If you use a non strict clock model then under Appearance you can also tell FigTree to colour the branches by the rate. You should end up with something similar to Figure..
+
+Question
+
+1. Is this topology consistent with that recovered from IQTREE and RAxML?
 
 
 
