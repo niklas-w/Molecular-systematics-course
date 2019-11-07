@@ -52,4 +52,13 @@ Also change the names of the output files: Click on the triangle to the left of 
 
 Now, open the program BEAST2 and select the file combined.xml as input file, as shown in the screenshot below. When you click the "Run" button, BEAST2 will start the analysis.
 
+# Analyzing the results with Tracer
+
+After the two BEAST2 analyses have completed (or if you decided not to wait and use the output of our analysis instead), open file combined.log in the program Tracer. When the main window has opened, choose Import Trace File... from the File menu and select the file that BEAST has created called xx.log.
+
+Remember that MCMC is a stochastic algorithm so the actual numbers will not be exactly the same as those depicted in the figure. On the left hand side is a list of the different quantities that BEAST has logged to file. There are traces for the posterior (this is the natural logarithm of the product of the tree likelihood and the prior density), and the continuous parameters. Selecting a trace on the left brings up analyses for this trace on the right hand side depending on tab that is selected. When first opened, the ‘posterior’ trace is selected and various statistics of this trace are shown under the Estimates tab. In the top right of the window is a table of calculated statistics for the selected trace.
+
+Select the clockRate parameter in the lefthand list to look at the average rate of evolution (averaged over the whole tree and all sites). Tracer will plot a (marginal posterior) histogram for the selected statistic and also give you summary statistics such as the mean and median. The 95% HPD stands for highest posterior density interval and represents the most compact interval on the selected parameter that contains 95% of the posterior probability. It can be loosely thought of as a Bayesian analog to a confidence interval. The TreeHeight parameter gives the marginal posterior distribution of the age of the root of the entire tree.
+
+
 
