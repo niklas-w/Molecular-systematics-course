@@ -57,7 +57,7 @@ Now lets take a look at the *FASTA* files we have created. Open any of them in y
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/FastaFile.png" alt="FastaFile" width="800"></p>
 
-as you can see, each entry is something similar to this:
+As you can see, each entry is something similar to this:
 
 ```
 >AF412762.1 Araschnia levana voucher NW39-2 wingless (wg) gene, partial cds
@@ -67,4 +67,8 @@ ATCGCCTCATCGAGTTCCAAGACGAGATCGGTACAGATTCCAGCTTCGACCGCACAATCCCGATCATAAA
 ACACCGATTGCAAAAGACCTAGTCTACCTTGAATCATCACCAGGTTTTTGTGAGAAAAACCCGAGGCTGG
 GCATTCCCGGCACACACAACGATACGAGCATCGGCGTCGACGGTTGCGATCTTATGTGTTGTGGTCGTGG
 TTACCGTACTGAAACAATGCTTGTTGTGG
-´´´
+
+```
+
+The line starting with /> in a fasta file is a header for the sequence. Practically all programs will have problems with how Genbank have created these fasta files. So in your text editor go and modify the name of each sequence to keep only the organism name. Remember that an empty space is not allowed in the name! Replace it with an underscore _ . You should have exactly the same header as bellow now.
+
