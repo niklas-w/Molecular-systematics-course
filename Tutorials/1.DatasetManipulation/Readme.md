@@ -58,6 +58,7 @@ Now lets take a look at the *FASTA* files we have created. Open any of them in y
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/FastaFile.png" alt="FastaFile" width="800"></p>
 
 as you can see, each entry is something similar to this:
+
 ´´´
 />AF412762.1 Araschnia levana voucher NW39-2 wingless (wg) gene, partial cds
 TCCTGCACCGTTAAAACTTGTTGGATGAGGCTGCCCAGTTTTCGCTCCGTAGGTGATGCGCTAAAAGATC
