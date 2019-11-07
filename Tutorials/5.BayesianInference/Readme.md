@@ -49,7 +49,9 @@ Most of the other items shown in the "Prior" panel correspond to prior densities
 Continue to the "MCMC" tab, where you can specify the run length. This analysis will require a few hundred million iterations before the MCMC chain reaches full stationarity, which would take several days of run time. For this exercise we recommend that you use a chain length of 5,000,000 million states and either run the analysis or cancel the run after following it for some time, and then use output files from our analysis (you'll find the links below) for the rest of the tutorial. 
 
 Also change the names of the output files: Click on the triangle to the left of "tracelog" and specify "Dataset.log" as the name of the log file. In the next field for "Log Every", set the number to "1,000" so that only every 1,000 MCMC state is written to the log file. Click on the triangle again, then click on the black triangle to the left of "treelog". Specify "Dataset.trees" as the name of the tree file and again use "1,000" as the number in the field for "Log Every". When the window looks as in the below screenshot, click on "Save" in BEAUti's "File" menu, and name the resulting file in XML format Dataset.xml.
-B
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast9.png" alt="Beast9" width="600"></p>
+
 Now, open the program BEAST2 and select the file combined.xml as input file, as shown in the screenshot below. When you click the "Run" button, BEAST2 will start the analysis.
 
 # Analyzing the results with Tracer
