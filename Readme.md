@@ -48,7 +48,6 @@ Here are deposited the instructions for the appointments and exercises of the co
  
  * [Bayesian methods](../../tree/master/Tutorials/5.BayesianInference/)
  
- * [Time calibrate the phylogenies](../../tree/master/Tutorials/6.TimeCalibration/)
  
 
 ### [Programs used in the tutorials](../../tree/master/Software/)
