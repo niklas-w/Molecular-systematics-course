@@ -12,11 +12,13 @@ The first step will be to convert a NEXUS file with a DATA block into a BEAST XM
 
 Open the program BEAUti from the BEAST2 package, and import the alignment. To do so, click "Import Alignment" from the "File" menu and select the dataset.nex or by clicking the "+ symbol" and "add aligment". The BEAUti window should then look as shown in the screenshot below.
 
-<p align="center"><img src="http://www.iqtree.org/doc/images/tut2.png" alt="IQTREE" width="600"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast1.png" alt="Beast1" width="600"></p>
 
 The BEAUti interface has six different tabs, of which (at the top of the window), the first one "Partitions" is currently selected. First need to specify settings regarding the partitioning in the currently open tab. 
 
 Select all four rows at the same time and click on "Link Trees" near the top of the BEAUti window. This will force BEAST2 to use the same phylogeny for all partitions, which is equivalent to concatenating the sequences as we did for maximum-likelihood analyses with RAxML in tutorial Maximum-Likelihood Phylogenetic Inference. 
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast2.png" alt="Beast2" width="600"></p>
 
 After clicking on "Link Trees", you should notice that all cells in the column to the right, under the heading "Tree" show the same value, "COI-begin", as in the screenshot below. This indicates that they now all share the same tree. You can edit the name and assign the name "tree" for instance.
 
