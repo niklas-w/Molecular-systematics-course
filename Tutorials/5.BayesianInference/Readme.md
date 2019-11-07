@@ -18,7 +18,7 @@ The BEAUti interface has six different tabs, of which (at the top of the window)
 
 Select all four rows at the same time and click on "Link Trees" near the top of the BEAUti window. This will force BEAST2 to use the same phylogeny for all partitions, which is equivalent to concatenating the sequences as we did for maximum-likelihood analyses with RAxML in tutorial Maximum-Likelihood Phylogenetic Inference. 
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast2.png" alt="Beast2" width="600"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast3.png" alt="Beast3" width="600"></p>
 
 After clicking on "Link Trees", you should notice that all cells in the column to the right, under the heading "Tree" show the same value, "COI-begin", as in the screenshot below. This indicates that they now all share the same tree. You can edit the name and assign the name "tree" for instance.
 
