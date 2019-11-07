@@ -44,7 +44,7 @@ This tutorial was retrieved from the [IQTREE Web-Server](http://www.iqtree.org/d
 
 **Part II**
 
-
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML1.png" alt="IQTREE" width="600"></p>
 
 
 
