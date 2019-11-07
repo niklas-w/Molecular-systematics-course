@@ -49,7 +49,14 @@ Take a look at it. Try to decipher different parts of it. Now look at the 2 red 
 
 Now ***Create File***! And *Voila!* Congratulations, now you have downloaded your first Fasta file.
 
-Now download all sequences for each gene separately. ***IMPORTANT TIP*** Do not download each accession number separately! Go to this link ([www.ncbi.nlm.nih.gov/sites/batchentrez](https://www.ncbi.nlm.nih.gov/sites/batchentrez)) and follow the instructions for a batch download ;)
+Now download all sequences for each gene separately. ***IMPORTANT TIP*** Do not download each accession number separately! Go to this link ([www.ncbi.nlm.nih.gov/sites/batchentrez](https://www.ncbi.nlm.nih.gov/sites/batchentrez)) and follow the instructions for a batch download ;) Also remember to change the name of your files to the name of their genes. Now you should have these 3 files:
+
+```
+COI.fasta
+EF1a.fasta
+Wingless.fasta
+
+```
 
 ---------
 
@@ -70,5 +77,18 @@ TTACCGTACTGAAACAATGCTTGTTGTGG
 
 ```
 
-The line starting with `>` in a fasta file is a header for the sequence. Practically all programs will have problems with how Genbank have created these fasta files. So in your text editor go and modify the name of each sequence to keep only the organism name. Remember that an empty space is not allowed in the name! Replace it with an underscore `_` . You should have exactly the same header as bellow now.
+The line starting with `>` in a fasta file is a header for the sequence. Practically all programs will have problems with how Genbank have created these fasta files. So in your text editor go and modify the name of each sequence to keep only the organism name. Remember that an empty space is not allowed in the name! Replace it with an underscore `_`. You should have exactly the same header as bellow now.
+
+
+```
+>Araschnia_levana
+TCCTGCACCGTTAAAACTTGTTGGATGAGGCTGCCCAGTTTTCGCTCCGTAGGTGATGCGCTAAAAGATC
+GCTTCGATGGAGCGTCGCGGGTCATGATGCCCAATACTGAAATCGAAGCACCCGCACAGCGAAATGACGC
+ATCGCCTCATCGAGTTCCAAGACGAGATCGGTACAGATTCCAGCTTCGACCGCACAATCCCGATCATAAA
+ACACCGATTGCAAAAGACCTAGTCTACCTTGAATCATCACCAGGTTTTTGTGAGAAAAACCCGAGGCTGG
+GCATTCCCGGCACACACAACGATACGAGCATCGGCGTCGACGGTTGCGATCTTATGTGTTGTGGTCGTGG
+TTACCGTACTGAAACAATGCTTGTTGTGG
+
+```
+
 
