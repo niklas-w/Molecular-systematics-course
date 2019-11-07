@@ -55,7 +55,6 @@ Now download all sequences for each gene separately. ***IMPORTANT TIP*** Do not 
 COI.fasta
 EF1a.fasta
 Wingless.fasta
-
 ```
 
 ---------
@@ -91,4 +90,26 @@ TTACCGTACTGAAACAATGCTTGTTGTGG
 
 ```
 
+Now save the files adding `2` after the name of the genes. You should have the following files now:
+
+
+```
+COI2.fasta
+EF1a2.fasta
+Wingless2.fasta
+```
+
+Now we can proceed to the next tutorial to learn about Alignment Methods. But before lets take a look at our sequence files in a graphical interface especifically designed to visialize sequences and alignments, ***Aliview***.
+
+Open the program, click on file, Open File and find any of the last fasta files you have created, for example `Wingless2.fasta`. You should see something like this.
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/Aliview.png" alt="Aliview" width="800"></p>
+
+Before anything keep in mind how this file looks like. Very few places look like ***aligned***, right? This a quite small dataset of relatively conserved sequences, so you can easily find patterns within the file and you should be able to align it by hand given enough time with no major problems. We will check our alignment once we obtain it in this program again.
+
+Now if you click again on `File` you will see something like this:
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/Aliview.png" alt="Aliview" width="500"></p>
+
+As you can see this program allow us to convert/save a sequence file in many different formats which can be used in different programs. Remember this for when we are going to convert the alignment to other file formats than fasta.
 
