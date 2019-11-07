@@ -51,6 +51,8 @@ Now ***Create File***! And *Voila!* Congratulations, now you have downloaded you
 
 Now download all sequences for each gene separately. ***IMPORTANT TIP*** Do not download each accession number separately! Go to this link ([www.ncbi.nlm.nih.gov/sites/batchentrez](https://www.ncbi.nlm.nih.gov/sites/batchentrez)) and follow the instructions for a batch download ;)
 
+---------
+
 Now lets take a look at the *FASTA* files we have created. Open any of them in your (prefered) text editor. (Here I have used TextWrangler!)
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/FastaFile.png" alt="FastaFile" width="800"></p>
