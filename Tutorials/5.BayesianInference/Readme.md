@@ -1,6 +1,6 @@
 
 
-#**Bayesian Phylogenetic Inference**#
+#Bayesian Phylogenetic Inference#
 
 Bayesian inference differs from Maximum Likelihood becase take into account prior probabilities. In the context of phylogenetic inference, this means that parameters could be constrained towards values (from fossils or biogeographic evidence) that are considered realistic based on the findings of previous studies on the group of interest. These in turn can then inform the timing in other parts of the phylogeny so that an overall timeline of diversification can be estimated. 
 
