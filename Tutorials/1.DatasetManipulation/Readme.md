@@ -70,5 +70,5 @@ TTACCGTACTGAAACAATGCTTGTTGTGG
 
 ```
 
-The line starting with /> in a fasta file is a header for the sequence. Practically all programs will have problems with how Genbank have created these fasta files. So in your text editor go and modify the name of each sequence to keep only the organism name. Remember that an empty space is not allowed in the name! Replace it with an underscore _ . You should have exactly the same header as bellow now.
+The line starting with `>` in a fasta file is a header for the sequence. Practically all programs will have problems with how Genbank have created these fasta files. So in your text editor go and modify the name of each sequence to keep only the organism name. Remember that an empty space is not allowed in the name! Replace it with an underscore `_` . You should have exactly the same header as bellow now.
 
