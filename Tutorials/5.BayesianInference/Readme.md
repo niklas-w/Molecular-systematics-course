@@ -77,11 +77,19 @@ BEAST also produces a posterior sample of phylogenetic time-trees along with its
 
 The burnin is the number of trees to remove from the start of the sample. Unlike Tracer which specifies the number of steps as a burnin, in TreeAn- notator you need to specify the actual number of trees. For this run, you specified a chain length of 5,000,000 steps sampling every 1,000 steps. Thus the trees file will contain 5,000 trees and so to specify a 10% burnin in the top text field.
 
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast13.png" alt="Beast13" width="600"></p>
+
 For the input file, select the trees file that BEAST created and select a file for the output (here we called it butterflies.MCC.tree). Now press Run and wait for the program to finish.
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast14.png" alt="Beast14" width="600"></p>
 
 Finally, we can visualize the tree in FigTree. Run this program, and open the butterflies.MCC.tree file by using the Open com- mand in the File menu. The tree should appear.
 
-First of all, expend Trees option in the panel, and check Order nodes and choose Ordering by decreasing. Try selecting Node Bars to get node age error bars. Also turn on Branch Labels and select posterior to get it to display the posterior probability for each node. If you use a non strict clock model then under Appearance you can also tell FigTree to colour the branches by the rate. You should end up with something similar to Figure..
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast15.png" alt="Beast15" width="600"></p>
+
+First of all, expend Trees option in the panel, and check Order nodes and choose Ordering by decreasing. Try selecting Node Bars to get node age error bars. Also turn on Branch Labels and select posterior to get it to display the posterior probability for each node. If you use a non strict clock model then under Appearance you can also tell FigTree to colour the branches by the rate. You should end up with something similar to Figure
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast16.png" alt="Beast16" width="600"></p>
 
 Question
 
