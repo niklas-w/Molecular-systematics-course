@@ -8,6 +8,9 @@ In this intense course we will introduce the basics of phylogenetics, covering b
 
 ## **Program**
 
+Location: D227 (Retina), Biology Building, Sölvegatan 35, 223 62 Lund
+
+
 | Hours\Days | 13th | 14th | 15th |
 | ---------- | ---- | ---- | ---- |
 | 9:00-10:30 | Introduction (NW) | Introduction to model based methods (JR) | Properties of DNA data and assessing robustness of hypotheses (JR) |
