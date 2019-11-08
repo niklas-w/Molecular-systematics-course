@@ -45,11 +45,11 @@ This tutorial was retrieved from the [IQTREE Web-Server](http://www.iqtree.org/d
 
 **Part II**
 
-In the second part of this tutorial we will learn how to perform an ML analysis in RAxML (Randomized Axelerated Maximum Likelihood), which is a program for sequential and parallel Maximum Likelihood based inference of large phylogenetic trees. You can compile the code from [here](https://github.com/stamatak/standard-RAxML) which works with command line. However, for this practical we will use raxmlGUI 2.0 ([Edler et al. 2019](https://www.biorxiv.org/content/10.1101/800912v1)), a graphical user interface to RAxML. raxmlGUI 2.0 facilitates phylogenetic analyses by coupling an intuitive interface with the unmatched performance of RAxML. You try to download the graphical interface ramlGUI 2.0 for Windows, MacOSX and Linux [here](https://antonellilab.github.io/raxmlGUI/).
+In the second part of this tutorial we will learn how to perform an ML analysis in RAxML (Randomized Axelerated Maximum Likelihood), which is a program for sequential and parallel Maximum Likelihood based inference of large phylogenetic trees. You can compile the code from [here](https://github.com/stamatak/standard-RAxML) which works with command line. However, for this practical we will use raxmlGUI 2.0 ([Edler et al. 2019](https://www.biorxiv.org/content/10.1101/800912v1)), a graphical user interface for RAxML. raxmlGUI 2.0 facilitates phylogenetic analyses by coupling an intuitive interface with the unmatched performance of RAxML. You can try to download the graphical interface ramlGUI 2.0 for Windows, MacOSX and Linux [here](https://antonellilab.github.io/raxmlGUI/).
 
 **Tree inference**
 
-The graphical interface is really friendly. It is very important that you create a folder and place the corresponding data files (one file per gene). By clicking on "LOAD ALIGNMENT" a dialog will open where you can select your MSA. raxmlGUI 2.0 only support Phylip format, so you should save your files in this format. 
+The graphical interface is really friendly. It is very important that you create a folder and place the corresponding data files (one file per gene). By clicking on "LOAD ALIGNMENT" a dialog will open where you can select your MSA. raxmlGUI 2.0 only supports Phylip format, so you should save your files in this format. 
 
 raxmlGUI 2.0 allows you to do many types of analyses and one of the advantages is that you can select the number of processors to work with and, therefore, on computers with multiple processors, this greatly accelerates the calculation process. 
  
@@ -61,24 +61,24 @@ RAxML is a program that only allows the implementation of 4 nucleotide evolution
 
 Once you upload the alignment, choose the type of *analysis* that in our case is going to be an ML+rapid bootstrap. 
 
-Then select *reps* which indicates the number of bootstrap replicates we want to do. In this practice we will leave it at 100 but normally it is advisable to do 1000. 
+Then select *reps* which indicates the number of bootstrap replicates we want to do. In this practical we will leave it at 100 but normally it is advisable to do 1000. 
 
-*BS brL* Indicates whether you want to store the branch lengths on each of the bootstrap trees. This increases the computing time and therefore we leave it by default.
+*BS brL* Indicates whether you want to store the branch lengths on each of the bootstrap trees. This increases the computing time and therefore we leave it at default.
 
 The *outgroup* window allows you to select the outgroup. It is not necessary to define an outgroup a priori. 
 
-Finally, there is window with the evolutionary models. For DNA you can only choose one of the 4 models: GTR; GTR + G (GTRGAMMA); GTR + G + I (GTRGAMMAI); GTR + I (GTRI). According to the author of RAxML if the Gamma is implemented, it is no longer necessary to implement I (invariant sites). 
+Finally, there is a window with the evolutionary models. For DNA you can only choose one of the 4 models: GTR; GTR + G (GTRGAMMA); GTR + G + I (GTRGAMMAI); GTR + I (GTRI). According to the author of RAxML if the Gamma is implemented, it is no longer necessary to implement I (invariant sites). 
 
-To incorporate partitions by gene we only need to upload the diffente gene files and the program automatically create a concatenate alignment.
+To incorporate partitions by gene we only need to upload the diffente gene files and the program automatically creates a concatenated alignment.
 Finally, we can proceed with *Run* RAxML to start the tree search.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML3.png" alt="RAxML3" width="600"></p>
 
-Once a job is finished we have created several files. The file *.tre* is the one that contains the best inferred tree with the boostrap values of the nodes. Open the file *.tre* with the FigTree program. Check the bootstrap values in the tree and compare the corresponding ones with result retrieved from IQTREE analysis.
+Once a job is finished we have created several files. The file *.tre* is the one that contains the best inferred tree with the boostrap values for the nodes. Open the file *.tre* with the FigTree program. Check the bootstrap values in the tree and compare the corresponding ones with the result retrieved from the IQTREE analysis.
 
 # Tree visualizations
 
-Open the file .treefile retrieved from IQTREE and .tre from raxmlGUI 2.0 in FigTree and find out the support values. The phylogeny should look more or less as shown in the next screenshot.
+Open the file .treefile retrieved from IQTREE and .tre from raxmlGUI 2.0 in FigTree and check the support values. The phylogeny should look more or less as shown in the next screenshot.
 
 
 **Questions**
