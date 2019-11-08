@@ -33,12 +33,12 @@ Here we will upload all the files and information shared during the lectures!
 
 ### [Data used in the course](../../tree/master/Data/)
 
-Here you will find the files we create during the course. (If at some point you are lost with a result, try to focus on the class and keep the same rhythm as others, here you can find what you need for next steps.)
+Here you will find the files we create during the course. (If at some point you are at a loss because your attempts to produce the results for the next step, here you can find the files you will need for next steps so you can keep up with the class.)
 
 
 ### [Tutorials](../../tree/master/Tutorials/)
 
-Here are deposited the instructions for the appointments and exercises of the course.
+Here are deposited the instructions for the assignments and exercises.
 
 
  * [Learn to generate datasets](../../tree/master/Tutorials/1.DatasetManipulation/)
