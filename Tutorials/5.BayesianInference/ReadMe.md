@@ -9,23 +9,25 @@ This is a ”user unfriendly” program, ie it is command driven and opens up in
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes1.png" alt="MrBayes1" width="600"></p>
 
-The first thing to prepare your dataset (which is in NEXUS format). MrBayes analyses can be done either by command line step by step or by addig all the parameters and different data partitions to your data file. See the following example: 
+The first thing to prepare your dataset (which is in NEXUS format). MrBayes analyses can be done either by command line step by step or by addig all the parameters and different data partitions to your data file. You can add this information in a text editor. See the following example: 
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes2.png" alt="MrBayes2" width="600"></p>
 
-After you prepare the NEXUS file, the next thing to do is running the program by writing ”Execute .filename” in the terminal. 
+After you prepare the NEXUS file, the next thing to do is running the program by writing ”Execute" filename (provide the path of your file) in the terminal. 
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes3.png" alt="MrBayes3" width="600"></p>
 
-If the dataset is okay, the program should look like this:
+If the dataset is okay, the analysis should look like this:
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes4.png" alt="MrBayes4" width="600"></p>
 
-If you want to do the excercise set by step, follow this instructions: 
+As we mention before, another way to run the program is given the parameters step by step. You only need your dataset and partition in the NEXUS format. To do so, follow this instructions: 
 
-To do so, write ”Execute filename” (obviously replacing ”filename” with the name of your data file). This assumes that the input file is in the same directory as the MrBayes executable. If you have different data partitions (eg different genes) in the data file, take care to define these character sets using the charset command. 
+Write ”Execute filename” (obviously replacing ”filename” with the name of your data file). This assumes that the input file is in the same directory as the MrBayes executable. If you have different data partitions (eg different genes) in the data file, take care to define these character sets using the charset command. 
 
-The next thing to do is define the model you want to use to analyze your dataset: ”lset nst=6 rates=invgamma” gives you the GTR+I+G model (see the manual for the other kinds of models). Now it is time to run your first analysis. This is done with the command ”mcmc” with a string of options after it, eg ”mcmc ngen=10000 printfreq=100 samplefreq=100 savebrlens=yes;”. This will run 10000 generations, sampling trees and parameters every 100 generations and printing to the screen every 100 generations (so that you can follow what is happening). Branch lengths of the trees are also saved (which makes bigger files). When 10000 generations have been iterated, the program will ask whether it should continue (unless you specify ”set autoclose=yes;” in the beginning, in which case the analysis terminates). Write in ”no” for the time being.
+The next thing to do is define the model you want to use to analyze your dataset: ”lset nst=6 rates=invgamma” gives you the GTR+I+G model (see the manual for the other kinds of models). 
+
+Now it is time to run your first analysis. This is done with the command ”mcmc” with a string of options after it, eg ”mcmc ngen=10000 printfreq=100 samplefreq=100 savebrlens=yes;”. This will run 10000 generations, sampling trees and parameters every 100 generations and printing to the screen every 100 generations (so that you can follow what is happening). Branch lengths of the trees are also saved (which makes bigger files). When 10000 generations have been iterated, the program will ask whether it should continue (unless you specify ”set autoclose=yes;” in the beginning, in which case the analysis terminates). Write in ”no” for the time being.
 
 Once the analysis is done, you will notice several new files have appeared in your folder where the program and your dataset are. These include filename.mcmc, filename.run1.p, filename.run1.t, filename.run2.p and filename.run2.t. the *.p files contain the sampled parameter values and log likelihoods, the *.t files contain all sampled trees. 
 	
