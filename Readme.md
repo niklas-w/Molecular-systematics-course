@@ -8,7 +8,7 @@ In this intense course we will introduce the basics of phylogenetics, covering b
 
 ## **Program**
 
-Location: D227 (Retina), Biology Building, Sölvegatan 35, 223 62 Lund
+**Location:** D227 (Retina), Biology Building, Sölvegatan 35, 223 62 Lund
 
 
 | Hours\Days | 13th | 14th | 15th |
