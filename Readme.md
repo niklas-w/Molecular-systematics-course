@@ -66,15 +66,17 @@ Here you can find a list of the programs we are going to use and links to where 
 
  * [AliView](http://www.ormbunkar.se/aliview/downloads/)
 
- * **PartitionFinder2**
+ * [PartitionFinder2](http://www.robertlanfear.com/partitionfinder/)
 
  * **RAxML**
 
- * **IQ-TREE**
+ * [IQ-TREE](http://www.iqtree.org/)
+ 
+ * [MrBayes](http://nbisweden.github.io/MrBayes/)
 	
- * **FigTree**
+ * [FigTree](http://tree.bio.ed.ac.uk/software/figtree/)
 
- * **BEAST2**
+ * [BEAST2](https://www.beast2.org/)
 
- * **Tracer**
+ * [Tracer](https://github.com/beast-dev/tracer/releases/tag/v1.7.1)
 
