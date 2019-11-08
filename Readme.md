@@ -51,6 +51,7 @@ Here are deposited the instructions for the assignments and exercises.
  
  * [Bayesian methods](../../tree/master/Tutorials/5.BayesianInference/)
  
+ * [DivergenceTime](../../tree/master/Tutorials//6.DivergenceTime/)
  
 
 ### [Programs used in the tutorials](../../tree/master/Software/)
