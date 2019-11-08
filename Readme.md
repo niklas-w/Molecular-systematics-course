@@ -45,7 +45,7 @@ Here are deposited the instructions for the assignments and exercises.
 	
  * [Align the gene markers](../../tree/master/Tutorials/2.Alignments/)
  
- * [Select the best evolutionary model and partitionning scheme](../../tree/master/Tutorials/3.ModelSelection/)
+ * [Select the best evolutionary model and partitioning scheme](../../tree/master/Tutorials/3.ModelSelection/)
  
  * [Maximum likelihood methods](../../tree/master/Tutorials/4.MaximumLikelihood/)
  
