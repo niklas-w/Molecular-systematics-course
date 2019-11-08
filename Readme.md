@@ -10,7 +10,7 @@ In this intense course we will introduce the basics of Phylogenetics, covering b
 
 | Hours\Days | 13th | 14th | 15th |
 | ---------- | ---- | ---- | ---- |
-| 8:00-9:45 |  |  |  |
+| 9:00-10:30 | Introduction (NW) |  |  |
 | 9:45-10:15 | Coffee | Coffee | Coffee |
 | 10:15-12:00 |  |  |  |
 | 12:00-13:00 | Lunch | Lunch | Lunch |
