@@ -1,4 +1,4 @@
-# **Molecular Systematics Course**
+# **Molecular Phylogenetics Course**
 
 By Systematic Biology Group, Lund University
 
