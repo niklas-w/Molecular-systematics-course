@@ -13,6 +13,14 @@ The first thing to prepare your dataset (which is in NEXUS format). MrBayes anal
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes2.png" alt="MrBayes2" width="600"></p>
 
+After you prepare the NEXUS file, the next thing to do is running the program by writing ”Execute .filename” in the terminal. 
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes3.png" alt="MrBayes3" width="600"></p>
+
+If the dataset is okay, the program should look like this:
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes4.png" alt="MrBayes4" width="600"></p>
+
 If you want to do the excercise set by step, follow this instructions: 
 
 To do so, write ”Execute filename” (obviously replacing ”filename” with the name of your data file). This assumes that the input file is in the same directory as the MrBayes executable. If you have different data partitions (eg different genes) in the data file, take care to define these character sets using the charset command. 
