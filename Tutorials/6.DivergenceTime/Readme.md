@@ -64,7 +64,7 @@ Now, open the program BEAST2 and select the file [Dataset.xml](https://github.co
 
 # Analyzing the results with Tracer
 
-After the two BEAST2 analyses have completed (or if you decided not to wait and use [the output](https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Output/Dataset.log) of our analysis instead), open file [Dataset.log](https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Output/Dataset.log) in the program Tracer. When the main window has opened, choose Import Trace File from the File menu and select the file that BEAST has created called Dataset.log.
+After the two BEAST2 analyses have completed (or if you decided not to wait and use [the output](https://github.com/niklas-w/Molecular-systematics-course/tree/master/Data/6.Dataset.log) of our analysis instead), open file [6.Dataset.log](https://github.com/niklas-w/Molecular-systematics-course/tree/master/Data/6.Dataset.log) in the program Tracer. When the main window has opened, choose Import Trace File from the File menu and select the file that BEAST has created called Dataset.log.
 
 Remember that MCMC is a stochastic algorithm so the actual numbers will not be exactly the same as those depicted in the figure. On the left hand side is a list of the different quantities that BEAST has logged to file. There are traces for the posterior (this is the natural logarithm of the product of the tree likelihood and the prior density), and the continuous parameters. Selecting a trace on the left brings up analyses for this trace on the right hand side depending on tab that is selected. When first opened, the ‘posterior’ trace is selected and various statistics of this trace are shown under the Estimates tab. In the top right of the window is a table of calculated statistics for the selected trace.
 
@@ -85,7 +85,7 @@ The burnin is the number of trees to remove from the start of the sample. Unlike
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast13.png" alt="Beast13" width="600"></p>
 
-For the input file, select the trees file that BEAST created and select a file for the output (here we called it [Final.tree](https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Output/Final.tree)). Now press Run and wait for the program to finish.
+For the input file, select the trees file that BEAST created and select a file for the output (here we called it [6.Final.tree](https://github.com/niklas-w/Molecular-systematics-course/tree/master/Data/6.Final.tree)). Now press Run and wait for the program to finish.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast14.png" alt="Beast14" width="600"></p>
 
