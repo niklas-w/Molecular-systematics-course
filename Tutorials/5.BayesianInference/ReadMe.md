@@ -7,6 +7,8 @@ Fot this practical, we will work with MrBayes. MrBayes is a program for Bayesian
 
 This is a ”user unfriendly” program, ie it is command driven and opens up in the terminal window. To use it, you need to know the sequence of commands that are input into the program. 
 
+https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes1.png
+
 The first thing to do is open your dataset (which is in NEXUS format) in the program. To do so, write ”Execute filename” (obviously replacing ”filename” with the name of your data file). This assumes that the input file is in the same directory as the MrBayes executable. If you have different data partitions (eg different genes) in the data file, take care to define these character sets using the charset command. 
 
 The next thing to do is define the model you want to use to analyze your dataset: ”lset nst=6 rates=invgamma” gives you the GTR+I+G model (see the manual for the other kinds of models). Now it is time to run your first analysis. This is done with the command ”mcmc” with a string of options after it, eg ”mcmc ngen=10000 printfreq=100 samplefreq=100 savebrlens=yes;”. This will run 10000 generations, sampling trees and parameters every 100 generations and printing to the screen every 100 generations (so that you can follow what is happening). Branch lengths of the trees are also saved (which makes bigger files). When 10000 generations have been iterated, the program will ask whether it should continue (unless you specify ”set autoclose=yes;” in the beginning, in which case the analysis terminates). Write in ”no” for the time being.
