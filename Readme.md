@@ -10,13 +10,13 @@ In this intense course we will introduce the basics of Phylogenetics, covering b
 
 | Hours\Days | 13th | 14th | 15th |
 | ---------- | ---- | ---- | ---- |
-| 9:00-10:30 | Introduction (NW) |  |  |
-| 9:45-10:15 | Coffee | Coffee | Coffee |
-| 10:15-12:00 |  |  |  |
-| 12:00-13:00 | Lunch | Lunch | Lunch |
-| 13:00-14:00 |  |  |  |
-| 14:00-14:30 | Coffee | Coffee | Coffee |
-| 14:30-16:00 |  |  |  |
+| 9:00-10:30 | Introduction (NW) | Introduction to model based methods (JR) | Properties of DNA data and assessing robustness of hypotheses (JR) |
+| 10:30-11:00 | Fika | Fika | Fika |
+| 11:00-12:30 | Understanding trees and alignments (NW) | Statistical frameworks for modelling in phylogenetics (ML and Bayesian) (JR) | Timing of divergence analyses and using trees for evolutionary studies (NW) |
+| 12:30-13:30 | Lunch | Lunch | Lunch |
+| 13:30-15:00 | Practicals | Practicals | Practicals |
+| 15:00-15:30 | Fika | Fika | Fika |
+| 15:30-16:30 | Practicals | Practicals | Practicals |
 
 
 
