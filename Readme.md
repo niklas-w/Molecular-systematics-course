@@ -1,10 +1,10 @@
-# **Molecular Systematic Course**
+# **Molecular Systematics Course**
 
-By Wahlberg lab
+By Systematic Biology Group, Lund University
 
 ## **Introduction**
 
-In this intense course we will introduce the basics of Phylogenetics, covering both theory and practice. The idea behind the course is that the student gets an overview of the actual methods and learns through hands on exercises to use some of the most used computer programs to study the phylogeny of any group using genetic information.
+In this intense course we will introduce the basics of phylogenetics, covering both theory and practice. The idea behind the course is that the student gets an overview of the actual methods and learns through hands on exercises to use some of the most used computer programs to study the phylogeny of any group using genetic information.
 
 ## **Program**
 
@@ -61,7 +61,7 @@ Here you can find a list of the programs we are going to use and links to where 
 
  * **MAFFT**
 
- * **AliView**
+ * [AliView](http://www.ormbunkar.se/aliview/downloads/)
 
  * **PartitionFinder2**
 
