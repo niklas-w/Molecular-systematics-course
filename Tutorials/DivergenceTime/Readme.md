@@ -1,6 +1,6 @@
 
 
-# Bayesian Phylogenetic Inference
+# Divergence Time Inference with BEAST 2
 
 This tutorial is modified from https://github.com/leimurillo/tutorials/tree/master/bayesian_phylogeny_inference.
 
