@@ -68,7 +68,7 @@ Here you can find a list of the programs we are going to use and links to where 
 
  * [PartitionFinder2](http://www.robertlanfear.com/partitionfinder/)
 
- * **RAxML**
+ * [RAxML](https://antonellilab.github.io/raxmlGUI/)
 
  * [IQ-TREE](http://www.iqtree.org/)
  
