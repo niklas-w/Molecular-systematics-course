@@ -9,17 +9,21 @@ This is a ”user unfriendly” program, ie it is command driven and opens up in
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes1.png" alt="MrBayes1" width="600"></p>
 
-The first thing to prepare your dataset (which is in NEXUS format). MrBayes analyses can be done either by command line step by step or by addig all the parameters and different data partitions to your data file. You can add this information in a text editor at the end of your data file. See the following example: 
+The first thing to prepare your dataset (which is in NEXUS format). MrBayes analyses can be done either by command line step by step or by adding all the parameters and different data partitions to your data file. You can add this information in a text editor at the end of your data file. See the following example: 
 
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes2.png" alt="MrBayes2" width="600"></p>
+
+Or simply add at the end of your file this information:
 
 begin mrbayes;
+
 	set autoclose=yes;
 	lset nst=6 rates=invgamma;
 	mcmc ngen=100000 printfreq=1000 samplefreq=1000 savebrlens=yes;
       sumt burnin=20;
 end;
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes2.png" alt="MrBayes2" width="600"></p>
 
 After you prepare the NEXUS file, the next thing to do is running the program by writing ”Execute" filename (provide the path of your file) in the terminal. 
 
