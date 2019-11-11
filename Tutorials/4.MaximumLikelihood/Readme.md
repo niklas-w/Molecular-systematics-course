@@ -80,6 +80,7 @@ Once a job is finished we have created several files. The file *.tre* is the one
 
 Open the file .treefile retrieved from IQTREE and .tre from raxmlGUI 2.0 in FigTree and check the support values. The phylogeny should look more or less as shown in the next screenshot.
 
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML4.png" alt="RAxML4" width="600"></p>
 
 **Questions**
 
