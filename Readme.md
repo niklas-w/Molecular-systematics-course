@@ -17,9 +17,9 @@ In this intense course we will introduce the basics of phylogenetics, covering b
 | 10:30-11:00 | Fika | Fika | Fika |
 | 11:00-12:30 | Lecture 2: Understanding trees and alignments (NW) | Lecture 4: Statistical frameworks for modelling in phylogenetics (ML and Bayesian) (JR) | Lecture 6: Timing of divergence analyses and using trees for evolutionary studies (NW) |
 | 12:30-13:30 | Lunch | Lunch | Lunch |
-| 13:30-15:00 | Tutorials 1 and 2 | Tutorials 3 and 4 | Tutorials 5 and 6 |
+| 13:30-15:00 | Tutorials 1 and 2 | Tutorials 3, 4, and 5 | Tutorial 6 |
 | 15:00-15:30 | Fika | Fika | Fika |
-| 15:30-16:30 | Tutorials 1 and 2 | Tutorials 3 and 4 | Tutorials 5 and 6 |
+| 15:30-16:30 | Tutorials 1 and 2 | Tutorials 3, 4, and 5 | Tutorial 6 |
 
 
 
@@ -41,17 +41,17 @@ Here you will find the files we create during the course. (If at some point you 
 Here are deposited the instructions for the assignments and exercises.
 
 
- 1 [Learn to generate datasets](../../tree/master/Tutorials/1.DatasetManipulation/)
+ * [Learn to generate datasets](../../tree/master/Tutorials/1.DatasetManipulation/)
 	
- 2 [Align the gene markers](../../tree/master/Tutorials/2.Alignments/)
+ * [Align the gene markers](../../tree/master/Tutorials/2.Alignments/)
  
- 3 [Select the best evolutionary model and partitioning scheme](../../tree/master/Tutorials/3.ModelSelection/)
+ * [Select the best evolutionary model and partitioning scheme](../../tree/master/Tutorials/3.ModelSelection/)
  
- 4 [Maximum likelihood methods](../../tree/master/Tutorials/4.MaximumLikelihood/)
+ * [Maximum likelihood methods](../../tree/master/Tutorials/4.MaximumLikelihood/)
  
- 5 [Bayesian methods](../../tree/master/Tutorials/5.BayesianInference/)
+ * [Bayesian methods](../../tree/master/Tutorials/5.BayesianInference/)
  
- 6 [DivergenceTime](../../tree/master/Tutorials//6.DivergenceTime/)
+ * [DivergenceTime](../../tree/master/Tutorials//6.DivergenceTime/)
  
 
 ### [Programs used in the tutorials](../../tree/master/Software/)
