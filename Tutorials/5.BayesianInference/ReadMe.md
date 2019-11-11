@@ -9,7 +9,15 @@ This is a ”user unfriendly” program, ie it is command driven and opens up in
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes1.png" alt="MrBayes1" width="600"></p>
 
-The first thing to prepare your dataset (which is in NEXUS format). MrBayes analyses can be done either by command line step by step or by addig all the parameters and different data partitions to your data file. You can add this information in a text editor. See the following example: 
+The first thing to prepare your dataset (which is in NEXUS format). MrBayes analyses can be done either by command line step by step or by addig all the parameters and different data partitions to your data file. You can add this information in a text editor at the end of your data file. See the following example: 
+
+
+begin mrbayes;
+	set autoclose=yes;
+	lset nst=6 rates=invgamma;
+	mcmc ngen=100000 printfreq=1000 samplefreq=1000 savebrlens=yes;
+      sumt burnin=20;
+end;
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes2.png" alt="MrBayes2" width="600"></p>
 
@@ -31,13 +39,6 @@ Now it is time to run your first analysis. This is done with the command ”mcmc
 
 Once the analysis is done, you will notice several new files have appeared in your folder where the program and your dataset are. These include filename.mcmc, filename.run1.p, filename.run1.t, filename.run2.p and filename.run2.t. the *.p files contain the sampled parameter values and log likelihoods, the *.t files contain all sampled trees. 
 	
-	Now you have to determine what the burn-in is, how many sampled generations from the beginning do you have to discard? This can be done by giving the command ”sump”. ”sump” summarizes the parameter valuess in both the *.p files, but importantly for now, it generates a graph showing the development of the log likelihood values over the sampled generations. Scroll upwards in the Command box if you do not see the graph. You can visually inspect the graph to see where equilibrium is reached and you can discard all generations before that. To double check, you can run the command again, this time with the number of sampled generations to be discarded, eg ”sump burnin=20”. If the graph looks fine, then it is time to summarize the trees with the command ”sumt burnin=20”. This generates 3 new files filename.con, filename.parts and filename.trprobs. For the time being the first file is the most important, it includes the 50%-majority rule tree for the dataset including branch lengths and posterior probabilities. Add the extension .tre to this file and open it in FigTree and click on the ”Phylogram” button to view the branch lengths, and the ”Internal labels” button to view the posterior probabilities.
+Now you have to determine what the burn-in is, how many sampled generations from the beginning do you have to discard? This can be done by giving the command ”sump”. ”sump” summarizes the parameter valuess in both the *.p files, but importantly for now, it generates a graph showing the development of the log likelihood values over the sampled generations. Scroll upwards in the Command box if you do not see the graph. You can visually inspect the graph to see where equilibrium is reached and you can discard all generations before that. To double check, you can run the command again, this time with the number of sampled generations to be discarded, eg ”sump burnin=20”. If the graph looks fine, then it is time to summarize the trees with the command ”sumt burnin=20”. This generates 3 new files filename.con, filename.parts and filename.trprobs. For the time being the first file is the most important, it includes the 50%-majority rule tree for the dataset including branch lengths and posterior probabilities. Add the extension .tre to this file and open it in FigTree and click on the ”Phylogram” button to view the branch lengths, and the ”Internal labels” button to view the posterior probabilities.
 	
-	It is also possible to automate the described analysis entirely by placing the following lines of text at the end of your data file:
 
-begin mrbayes;
-	set autoclose=yes;
-	lset nst=6 rates=invgamma;
-	mcmc ngen=100000 printfreq=1000 samplefreq=1000 savebrlens=yes;
-      sumt burnin=20;
-end;
