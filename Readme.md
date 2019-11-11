@@ -13,13 +13,13 @@ In this intense course we will introduce the basics of phylogenetics, covering b
 
 | Hours\Days | 13th | 14th | 15th |
 | ---------- | ---- | ---- | ---- |
-| 9:00-10:30 | Introduction (NW) | Introduction to model based methods (JR) | Properties of DNA data and assessing robustness of hypotheses (JR) |
+| 9:00-10:30 | Lecture 1: Introduction (NW) | Lecture 3: Introduction to model based methods (JR) | Lecture 5: Properties of DNA data and assessing robustness of hypotheses (JR) |
 | 10:30-11:00 | Fika | Fika | Fika |
-| 11:00-12:30 | Understanding trees and alignments (NW) | Statistical frameworks for modelling in phylogenetics (ML and Bayesian) (JR) | Timing of divergence analyses and using trees for evolutionary studies (NW) |
+| 11:00-12:30 | Lecture 2: Understanding trees and alignments (NW) | Lecture 4: Statistical frameworks for modelling in phylogenetics (ML and Bayesian) (JR) | Lecture 6: Timing of divergence analyses and using trees for evolutionary studies (NW) |
 | 12:30-13:30 | Lunch | Lunch | Lunch |
-| 13:30-15:00 | Practicals | Practicals | Practicals |
+| 13:30-15:00 | Tutorials 1 and 2 | Tutorials 3 and 4 | Tutorials 5 and 6 |
 | 15:00-15:30 | Fika | Fika | Fika |
-| 15:30-16:30 | Practicals | Practicals | Practicals |
+| 15:30-16:30 | Tutorials 1 and 2 | Tutorials 3 and 4 | Tutorials 5 and 6 |
 
 
 
