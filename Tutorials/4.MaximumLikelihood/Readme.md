@@ -43,7 +43,7 @@ Once a job is finished, you can select it by checking the corresponding box and 
 
 This tutorial was retrieved from the [IQTREE Web-Server](http://www.iqtree.org/doc/Web-Server-Tutorial)
 
-## **Part II: RAxML GUI**
+## **Part II: RAxMLGUI2.0**
 
 In the second part of this tutorial we will learn how to perform an ML analysis in RAxML (Randomized Axelerated Maximum Likelihood), which is a program for sequential and parallel Maximum Likelihood based inference of large phylogenetic trees. You can compile the code from [here](https://github.com/stamatak/standard-RAxML) which works with command line. However, for this practical we will use raxmlGUI 2.0 ([Edler et al. 2019](https://www.biorxiv.org/content/10.1101/800912v1)), a graphical user interface for RAxML. raxmlGUI 2.0 facilitates phylogenetic analyses by coupling an intuitive interface with the unmatched performance of RAxML. You can try to download the graphical interface ramlGUI 2.0 for Windows, MacOSX and Linux [here](https://antonellilab.github.io/raxmlGUI/).
 
