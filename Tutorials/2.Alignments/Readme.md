@@ -58,9 +58,9 @@ Open Aliview and open the last file in it. You should see something like this:
 So now we have the 3 genes concatenated in a single sequence alignment file. But what we dont know in this "*Super Gene*" alignment is the information about where each gene starts in the alignment. To obtain this information one way is to open each gene's alignment `COI_aligned.fasta`, `EF1a_aligned.fasta` and `Wingless_aligned.fasta` in *Aliview* and look at the lenght of each alignment. In our concatenated matrix we know the order of the genes...  so you can obtain the position of each gene easily. I want you to create a file in your text editor called `partitions.txt` and write down the information of each gene as:
 
 ```
-COI = 1 - 1450;
-EF1a = 1451 - 2690;
-Wingless = 2691 - 3113;
+COI = 1 - X;
+EF1a = X+1 - Y;
+Wingless = Y+1 - 3113;
 ```
 
 where you find the correct value for `X` and `Y`. Now that you have the alignments open in *Aliview*, I want you to pay atention to the codon positions. Look at the following picture:
