@@ -58,10 +58,31 @@ Open Aliview and open the last file in it. You should see something like this:
 So now we have the 3 genes concatenated in a single sequence alignment file. But what we dont know in this "*Super Gene*" alignment is the information about where each gene starts in the alignment. To obtain this information one way is to open each gene's alignment `COI_aligned.fasta`, `EF1a_aligned.fasta` and `Wingless_aligned.fasta` in *Aliview* and look at the lenght of each alignment. In our concatenated matrix we know the order of the genes...  so you can obtain the position of each gene easily. I want you to create a file in your text editor called `partitions.txt` and write down the information of each gene as:
 
 ```
-DNA, COI = 1 - X
-DNA, EF1a = X+1 - Y
-DNA, Wingless = Y+1 - 3113
+COI = 1 - 1450;
+EF1a = 1451 - 2690;
+Wingless = 2691 - 3113;
 ```
 
-where you find the correct value for `X` and `Y`.
+where you find the correct value for `X` and `Y`. Now that you have the alignments open in *Aliview*, I want you to pay atention to the codon positions. Look at the following picture:
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/2.Alignments/Aliview4.png" alt="Aliview4" width="800"></p>
+
+We want to write down the codon positions for each *partition* of our dataset. To find the correct reading frame and therefore the codon positions you can click on the button on the red rectangle on top at left. Then you change the reading frame to find the one which has no stop codons in the alignment using the second red rectangle. *Do you know why?*  Also pay attention to the third red rectangle. In the picture we have the alignment of the *Wingless* gene. It is a protein coding nucleaqr gene, so the `Standard code` is the right option. But what about the *COI* gene?
+
+To gain some time I will copy here how you should write down the codon positions for the partition file:
+
+```
+COI_pos1 = 1 - 1450\3;
+COI_pos2 = 2 - 1450\3;
+COI_pos3 = 3 - 1450\3;
+EF1a_pos3 = 1451 - 2690\3;
+EF1a_pos1 = 1452 - 2690\3;
+EF1a_pos2 = 1453 - 2690\3;
+Wingless_pos1 = 2691 - 3113\3;
+Wingless_pos2 = 2692 - 3113\3;
+Wingless_pos3 = 2693 - 3113\3;
+```
+
+Copy/Paste this in your text editor and save it as `partitionsCodons.txt`. Now we are ready to find out which partitioning scheme is best for our dataset in the next tutorial.
+
 
