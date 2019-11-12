@@ -1,0 +1,9 @@
+COI_pos1 = 1 - 1450\3;
+COI_pos2 = 2 - 1450\3;
+COI_pos3 = 3 - 1450\3;
+EF1a_pos3 = 1451 - 2690\3;
+EF1a_pos1 = 1452 - 2690\3;
+EF1a_pos2 = 1453 - 2690\3;
+Wingless_pos1 = 2691 - 3113\3;
+Wingless_pos2 = 2692 - 3113\3;
+Wingless_pos3 = 2693 - 3113\3;
