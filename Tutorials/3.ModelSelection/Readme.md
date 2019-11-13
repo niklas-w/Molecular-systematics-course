@@ -18,5 +18,9 @@ Dataset.phy
 Dataset.nex
 ```
 
-For this tutorial we are going to use the `Dataset.phy` and a control file that we are going to create together. We are also going to use an online platform to run *PartitionFinder*. The platform that we are going to use now is called *CIPRES*. It is a very useful online platform where you can run plenty of other programs also. But you need to register first, so click on the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action).
+For this tutorial we are going to use the `Dataset.phy` and a control file that we are going to create together. We are also going to use an online platform to run *PartitionFinder*. The platform that we are going to use now is called *CIPRES*. It is a very useful online platform where you can run plenty of other programs also. But you need to register first, so click and open (in a new window) the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action). Ypu will see something like the next image. If you dont already have an account click or the red rectangle and register.
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres.png" alt="Cipres" width="800"></p>
+
+
 
