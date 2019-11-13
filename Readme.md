@@ -41,7 +41,7 @@ Here you will find the files we create during the course. (If at some point you 
 Here are deposited the instructions for the assignments and exercises.
 
 
- * [Learn to generate datasets](../../tree/master/Tutorials/1.DatasetManipulation/)
+ * [Learn to generate datasets (1)](../../tree/master/Tutorials/1.DatasetManipulation/)
 	
  * [Align the gene markers](../../tree/master/Tutorials/2.Alignments/)
  
