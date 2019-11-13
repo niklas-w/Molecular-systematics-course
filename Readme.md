@@ -43,15 +43,15 @@ Here are deposited the instructions for the assignments and exercises.
 
  * [Learn to generate datasets (1)](../../tree/master/Tutorials/1.DatasetManipulation/)
 	
- * [Align the gene markers](../../tree/master/Tutorials/2.Alignments/)
+ * [Align the gene markers (2)](../../tree/master/Tutorials/2.Alignments/)
  
- * [Select the best evolutionary model and partitioning scheme](../../tree/master/Tutorials/3.ModelSelection/)
+ * [Select the best evolutionary model and partitioning scheme (3)](../../tree/master/Tutorials/3.ModelSelection/)
  
- * [Maximum likelihood methods](../../tree/master/Tutorials/4.MaximumLikelihood/)
+ * [Maximum likelihood methods (4)](../../tree/master/Tutorials/4.MaximumLikelihood/)
  
- * [Bayesian methods](../../tree/master/Tutorials/5.BayesianInference/)
+ * [Bayesian methods (5)](../../tree/master/Tutorials/5.BayesianInference/)
  
- * [DivergenceTime](../../tree/master/Tutorials//6.DivergenceTime/)
+ * [Divergence Time (6)](../../tree/master/Tutorials//6.DivergenceTime/)
  
 
 ### [Programs used in the tutorials](../../tree/master/Software/)
