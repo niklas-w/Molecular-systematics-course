@@ -17,7 +17,7 @@ Using a web browser, you need to navigate to the NCBI’s Genbank. Even if the [
 | 5 | NW82-15 | Asterocampa leilia | KM012928 | AY218257 | AY218275 |
 | 6 | NW63-3 | Aglais urticae | AY248786 | AY248811 | AF412777 |
 | 7 | NW68-5 | Anartia amathea | AY788606 | AY788708 | AY788469 |
-| 8 | NW76-2 | Castilia eranites | AY788617 | AY788722 | AY788483 |
+| 8 | NW76-2 | Eresia eranites | AY788617 | AY788722 | AY788483 |
 | 9 | NW73-14 | Melitaea cinxia | AY788656 | AY788776 | AY788536 |
 | 10 | NW85-13 | Junonia coenia | AY788643 | AY248801 | AY248826 |
 | 11 | NW11-4 | Phyciodes cocyta | AF187755 | AY090192 | AY090158 |
