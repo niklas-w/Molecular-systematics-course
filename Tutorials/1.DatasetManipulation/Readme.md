@@ -4,6 +4,8 @@
 
 In this section we will learn to download genetic sequence information from online databases (i.e. Genbank) and generate a dataset. Later on, by following tutorials, you will align this dataset file and convert it to different alignment file formats. We will also learn here how to convert between different formats used in phylogenetic programs and the main differences between these formats.
 
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/Butterflies_for_tutorial.png" alt="Butterflies" width="800"></p>
+
 ## **Download the data**
 
 Using a web browser, you need to navigate to the NCBI’s Genbank. Even if the [link]( https://www.ncbi.nlm.nih.gov/genbank/) is not easy to remember, googling basically any keyword combination containing Genbank will bring you to the NCBI quite easily. In Genbank each sequence entry has a unique identification code called ***accession number***. For this exercise, you need to download the sequences of the following accession numbers.
