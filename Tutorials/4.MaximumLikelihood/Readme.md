@@ -5,7 +5,7 @@
 
 In this tutorial, we will analyse the butterfly dataset with one of the fastest maximum-likelihood based phylogenetic programs [IQ-TREE](http://www.iqtree.org) ([Nguyen et al. 2015](https://academic.oup.com/mbe/article/32/1/268/2925592)). IQ-TREE for Windows, MacOSX and Linux can be downloaded [here](http://www.iqtree.org/#download), you can install it on your personal computer (optional).
 
-The quickest is to try out the IQ-TREE web server, where you only need to upload an alignment, choose the options and start the analysis.
+The quickest is to try out the IQ-TREE [web server](http://iqtree.cibiv.univie.ac.at/), where you only need to upload an alignment, choose the options and start the analysis.
 
 **Tree inference**
 
