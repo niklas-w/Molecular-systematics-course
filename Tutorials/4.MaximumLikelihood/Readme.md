@@ -59,11 +59,11 @@ EF1a_aligned.phy
 Wingless_aligned.phy
 ```
 
-raxmlGUI 2.0 allows you to do many types of analyses and one of the advantages is that you can select the number of processors to work with and, therefore, on computers with multiple processors, this greatly accelerates the calculation process. 
+One of the advantages of *raxmlGUI 2.0* is that you can select the number of processors to work with and, therefore, on computers with multiple processors, this greatly accelerates the calculation process. This is selected in the red rectangle at top right of the next picture (choose the maximum number you have there):
  
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML1.jpg" alt="RAxML1" width="600"></p>
 
-RAxML is a program that only allows the implementation of 4 nucleotide evolutionary models: GTR; GTR+G; GTR+I; GTR+G+I.
+The other red rectangle is where you can click to upload your alignments. Click there and upload your phylip format alignments. RAxML is a program that only allows the implementation of 4 nucleotide evolutionary models: GTR; GTR+G; GTR+I; GTR+G+I. For this exercise choose GTR+G+I.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML2.png" alt="RAxML2" width="600"></p>
 
