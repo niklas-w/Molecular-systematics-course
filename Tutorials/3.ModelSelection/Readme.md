@@ -22,5 +22,12 @@ For this tutorial we are going to use the `Dataset.phy` and a control file that 
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres.png" alt="Cipres" width="800"></p>
 
+When ypu log in you will see something like this:
 
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres2.png" alt="Cipres2" width="800"></p>
 
+You have to click on *Create New Folder* and as *Label* you use `Course`. Now under you "Folders" you have a folder named *Course* and 2 other folders inside of it. Like the following picture:
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres3.png" alt="Cipres3" width="800"></p>
+
+Click on Data subfolder.
