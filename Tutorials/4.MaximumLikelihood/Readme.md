@@ -49,7 +49,15 @@ In the second part of this tutorial we will learn how to perform an ML analysis 
 
 **Tree inference**
 
-The graphical interface is really friendly. It is very important that you create a folder and place the corresponding data files (one file per gene). By clicking on "LOAD ALIGNMENT" a dialog will open where you can select your MSA. raxmlGUI 2.0 only supports Phylip format, so you should save your files in this format. 
+The graphical interface is really friendly. It is very important that you create a folder and place the corresponding data files (one file per gene). By clicking on "LOAD ALIGNMENT" a dialog will open where you can select your MSA. raxmlGUI 2.0 only supports Phylip format, so you should save your files in this format.
+
+So the first step for you will be to open *Aliview*, load your gene alignment files (COI_aligned.fasta, EF1a_aligned.fasta and Wingless_aligned.fasta) and save them in phylip format. Then you should have the following files:
+
+```
+COI_aligned.phy
+EF1a_aligned.phy
+Wingless_aligned.phy
+```
 
 raxmlGUI 2.0 allows you to do many types of analyses and one of the advantages is that you can select the number of processors to work with and, therefore, on computers with multiple processors, this greatly accelerates the calculation process. 
  
