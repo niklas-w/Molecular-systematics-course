@@ -163,4 +163,14 @@ END;
 
 ```
 
-Delete these 2 blocks! We don´t need them. Now replace it with the MrBayes lock created by *PartitionFinder*. Save it as `DatasetMB.nex`. We will be using this later. 
+Delete these 2 blocks! We don´t need them. Now replace it with the MrBayes lock created by *PartitionFinder*. Save it as `DatasetMB.nex`. We will be using this later. For *IQTree* we don´t need to set the best partitioning scheme as the program will find it as the first step of the analysis. But we would maybe need to create the partition file that can be used to run RaxML on cipres for example (We are not going to do so, but you should be able to do it now that you know how *CIPRES* works)
+
+Take a look again to the result of *PartitionFinder* in your text editor. Look at the block for *RaxML*. It should be something like this:
+
+```
+DNA, Subset1 = 1453-2690\3, 2-1450\3, 1-1450\3, 1452-2690\3, 2691-3113\3, 2692-3113\3
+DNA, Subset2 = 3-1450\3
+DNA, Subset3 = 1451-2690\3, 2693-3113\3
+```
+
+Save this to a new \*.txt file and call it `partitionsPF.txt`. This will be useful for running *RaxML* in *CIPRES* for example.
