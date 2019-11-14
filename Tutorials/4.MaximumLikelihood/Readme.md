@@ -7,7 +7,7 @@ In this tutorial, we will analyse the butterfly dataset with one of the fastest 
 
 The quickest is to try out the IQ-TREE [web server](http://iqtree.cibiv.univie.ac.at/), where you only need to upload an alignment, choose the options and start the analysis.
 
-** Command line instructions**
+** Command line instructions in case you want to run the analysis in the terminal **
 
 iqtree -s file.phy -spp Partitions.txt -m MFP+MERGE -bb 1000 -arlt 1000
 
