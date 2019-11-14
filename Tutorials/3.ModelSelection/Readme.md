@@ -46,11 +46,11 @@ search = greedy;
 
 For ***ALIGNMENT FILE*** section you have to provide the name of the alignment file which is in this case `Dataset.phy`. But in this case as we are going to run the job on an online platform, the platform ask us to use `alignment = infile.phy;`. In the ***DATA BLOCKS*** you have to use the partition information we created yesterday and saved as `partitionsCodon.txt`. Take a look at the other options, what else you can modify? Remember to save the changes t your file.
 
-We are going to use an online platform to run *PartitionFinder* as running it on your computer need spending some extra time for the installation step. The platform that we are going to use now is called ***CIPRES***. It is a very useful online platform where you can run plenty of other programs also. But you need to register first, so click and open (in a new window) the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action). You will see something like the next image. If you don’t have an account already, click or the red rectangle and register.
+We are going to use an online platform to run *PartitionFinder* as running it on your computer need spending some extra time for the installation step. The platform that we are going to use now is called ***CIPRES***. It is a very useful online platform using very fast super computers where you can run plenty of other programs also. But you need to register first, so click and open (in a new window) the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action). You will see something like the next image. If you don’t have an account already, click or the red rectangle and register.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres.png" alt="Cipres" width="800"></p>
 
-When ypu log in you will see something like this:
+When you log in you will see something like this:
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres2.png" alt="Cipres2" width="800"></p>
 
@@ -77,5 +77,90 @@ Now in the ***Description*** write `PF1` and click on ***Save and Run Task***. C
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres7.jpg" alt="Cipres7" width="800"></p>
 
-Here you can see that your task is "Running"! Refresh the page from time to time to see when the job is done!
+Here you can see that your task is "Running"! Refresh the page from time to time to see when the job is done! You can see this best in the red rectangle on top-left of the picture above under **Running Tasks = 1**. When the number is zero (i.e. you have no more running jobs!) you have to click on the button in the second red rectangle in the above picture, under **Action**, **View Status** or **View Output**.
 
+Now we want to export the results to our computer! So now you should be seeing something like this:
+
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres8.png" alt="Cipres8" width="600"></p>
+
+Now we want to download the \*.zip file marked in a red rectangle again. Download it and extract it so we can take a look at them. Inside your `analysis.zip`, you will find a file called `best_scheme.txt`, open it in your prefered text editor. Now I will explain the different blocks of information you have in the result file. First, you should see something like the next block:
+
+```
+Settings used
+
+alignment         : ./infile.phy
+branchlengths     : unlinked
+models            : JC, K80, SYM, F81, HKY, GTR, JC+G, K80+G, SYM+G, F81+G, HKY+G, GTR+G, JC+I, K80+I, SYM+I, F81+I, .........
+model_selection   : bic
+search            : greedy
+
+```
+
+In this block it tells you what alignment have been used, what we chosed for the branchlenghts, which models have been considered, what criteria is used to chose the best model and finally what kind of search we have done in the model space. Now lets take a look at the real result of the analisys. But first do you remember how many partitions we had in the beggining? 3 codon positions for each gene, therefore 9 partitions to start with! Which partitions are similar? Which ones you think that are enough similar that we could merge them in the same partition? Take a look at the following block to see if your guess was accurate enough!
+
+
+```
+Best partitioning scheme
+
+Scheme Name       : step_6
+Scheme lnL        : -14653.109375
+Scheme BIC        : 30247.2897839
+Number of params  : 117
+Number of sites   : 3113
+Number of subsets : 3
+
+Subset | Best Model | # sites    | subset id                        | Partition names
+1      | GTR+I+G    | 2075       | d1a04f8fd764b835133798f90a299406 | EF1a_pos2, COI_pos2, COI_pos1, EF1a_pos1, Wingless_pos1, Wingless_pos2                              
+2      | HKY+G      | 483        | a025b1f5af55bcc97f43596191b3173e | COI_pos3
+3      | GTR+G      | 555        | 9962ca78e0bdee4c13544ee243422b2d | EF1a_pos3, Wingless_pos3
+```
+
+Here in the result you have 2 sub-blocks. In the first one you get some general information about your results as the likelihood of the scheme choosed as the best, or number of parameters or .... Then you can see the subsets chosen as the best scheme for partitioning. *Were you correct in your guess?* 
+
+Next you see different blocks which can be used for running different programs. Here we are going to use the block for MrBayes first. You should be able to find it easily in your text editor. It should be similar to this:
+
+```
+begin mrbayes;
+
+	charset Subset1 = 1453-2690\3 2-1450\3 1-1450\3 1452-2690\3 2691-3113\3 2692-3113\3;
+	charset Subset2 = 3-1450\3;
+	charset Subset3 = 1451-2690\3 2693-3113\3;
+
+	partition PartitionFinder = 3:Subset1, Subset2, Subset3;
+	set partition=PartitionFinder;
+
+	lset applyto=(1) nst=6 rates=invgamma;
+	lset applyto=(2) nst=2 rates=gamma;
+	lset applyto=(3) nst=6 rates=gamma;
+
+	prset applyto=(all) ratepr=variable;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
+	unlink brlens=(all);
+
+end;
+```
+
+Now open the nexus file we created, `Dataset.nex` in your prefered text editor (or my preffered text editor actually!). As we saw yesterday the data in this format is organized in blocks. The first block is your data, then you will have a block that *Aliview* have created. Something like this:
+
+```
+
+BEGIN ASSUMPTIONS;
+EXSET * UNTITLED  = ;
+END;
+
+BEGIN CODONS;
+CODONPOSSET * CodonPositions =
+ N:,
+ 1: 1-3112\3,
+ 2: 2-3113\3,
+ 3: 3-3111\3;
+CODESET  * UNTITLED = Universal: all ;
+END;
+
+BEGIN SETS;
+END;
+
+```
+
+Delete these 2 blocks! We don´t need them. Now replace it with the MrBayes lock created by *PartitionFinder*.
