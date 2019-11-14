@@ -61,7 +61,7 @@ Wingless_aligned.phy
 
 raxmlGUI 2.0 allows you to do many types of analyses and one of the advantages is that you can select the number of processors to work with and, therefore, on computers with multiple processors, this greatly accelerates the calculation process. 
  
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML1.png" alt="RAxML1" width="600"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML1.jpg" alt="RAxML1" width="600"></p>
 
 RAxML is a program that only allows the implementation of 4 nucleotide evolutionary models: GTR; GTR+G; GTR+I; GTR+G+I.
 
