@@ -79,11 +79,12 @@ Follow by clicking on the **Priors** tab. From the drop-down menu in front of th
 
 Now on the bottom of the *priors* list you have the possibility of creating new ones by clicking on **Add Prior**. One of the important informations that we want to include in a **Time Calibration Phylogeny** is the *Time* dimension. We will add this ***Prior*** using this button. The calibration points that we will be using for this exercize are extracted from Niklas' paper on the timing of butterflies. We will add time constraints on the age of the **most common ancester** of a clade. The constraints that we will be using now are the ones in the next table:
 
-<p align="center">| Clade | min Age | max Age |
+<p align="center"
+| Clade | min Age | max Age |
 |---|---|---|
 | Araschnia, Aglais, Hypanartia and Vanessa | 34 My | 60 My |
 | Melitaea, Chlosyne, Eresia and Phyciodes | 28 My | - |
-
+>
 
 Most of the other items shown in the "Prior" panel correspond to prior densities placed on the parameters of the substitution models for the partitions. You may keep the default priors for each of these parameters. However, to allow time calibration of the phylogeny, a prior density still needs to be specified for at least one divergence time, otherwise BEAST2 would have very little information to estimate branch lengths according to an absolute time scale. 
 
