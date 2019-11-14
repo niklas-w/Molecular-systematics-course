@@ -1,7 +1,7 @@
 # **Model Selection**
 
 
-In the other two tutorials you have learned to download various gene sequences from Genbank and align and concatenate them to create the dataset we want to work on for the rest of the workshop. You also heard about differences between different file formats and saw how to create the needed formats. For the next tutorial, we are going to use *PartitionFinder* to find the best partitioning scheme for our dataset and also the best models for each partition.
+In the first two tutorials you have learned to download various gene sequences from Genbank and align and concatenate them to create the dataset we want to work on for the rest of the course. You also heard about differences between different file formats and saw how to create the needed formats. For the next tutorial, we are going to use *PartitionFinder* to find the best partitioning scheme for our dataset and also the best models for each partition.
 
 First remember that our final dataset, `COI_EF1a_Wingless.fasta` was saved as a fasta format (If you did not manage to generate this file, go to ***Molecular-systematics-course/Data/*** and download `2_COI_EF1a_Wingless.fasta`). Now open *Aliview* and open this file. You should have something similar to this:
 
@@ -11,14 +11,14 @@ Now I want you to save a \*.phy and a \.nex alignment file with the name **Datas
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Aliview5.png" alt="Aliview5" width="800"></p>
 
-You should have the next files now:
+You should have these two files now:
 
 ```
 Dataset.phy
 Dataset.nex
 ```
 
-For this tutorial we are going to use the `Dataset.phy` and a control file that we are going to create together. The control file has different blocks that you need to modify based on your analysis. On your text editor create a new file and save it as `partition_finder.cfg`. Copy/Paste inside the file the next block:
+For this tutorial we are going to use the `Dataset.phy` and a command file that we are going to create together. The command file has different blocks that you need to modify based on your analysis. In your text editor create a new file and save it as `partition_finder.cfg`. Copy/Paste inside the file the next block:
 
 ```
 ## ALIGNMENT FILE ##
@@ -44,9 +44,9 @@ search = greedy;
 
 ```
 
-For ***ALIGNMENT FILE*** section you have to provide the name of the alignment file which is in this case `Dataset.phy`. But in this case as we are going to run the job on an online platform, the platform ask us to use `alignment = infile.phy;`. In the ***DATA BLOCKS*** you have to use the partition information we created yesterday and saved as `partitionsCodon.txt`. Take a look at the other options, what else you can modify? Remember to save the changes t your file.
+For ***ALIGNMENT FILE*** section you have to provide the name of the alignment file which is in this case `Dataset.phy`. But in this case as we are going to run the job on an online platform, the platform ask us to use `alignment = infile.phy;`. In the ***DATA BLOCKS*** you have to use the partition information we created yesterday and saved as `partitionsCodon.txt`. Take a look at the other options, what else can you modify? Remember to save the changes to your file.
 
-We are going to use an online platform to run *PartitionFinder* as running it on your computer need spending some extra time for the installation step. The platform that we are going to use now is called ***CIPRES***. It is a very useful online platform using very fast super computers where you can run plenty of other programs also. But you need to register first, so click and open (in a new window) the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action). You will see something like the next image. If you don’t have an account already, click on the option in the red rectangle and register.
+We are going to use an online platform to run *PartitionFinder* to speed up the analysis and also to introduce you to running analyses remotely. The platform that we are going to use now is called ***CIPRES***. It is a very useful online platform using very fast super computers where you can run plenty of other programs also. But you need to register first, so click and open (in a new window) the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action). You will see something like the next image. If you don’t have an account already, click on the option in the red rectangle and register.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres.png" alt="Cipres" width="800"></p>
 
@@ -84,7 +84,7 @@ Now we want to export the results to our computer! So now you should be seeing s
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres8.png" alt="Cipres8" width="800"></p>
 
-Now we want to download the \*.zip file marked in a red rectangle again. Download it and extract it so we can take a look at them. Inside your `analysis.zip`, you will find a file called `best_scheme.txt`, open it in your preferred text editor. Now I will explain the different blocks of information you have in the result file. First, you should see something like the next block:
+Now we want to download the \*.zip file marked with the red rectangle again. Download it and extract the files so we can take a look at them. Inside your `analysis.zip`, you will find a file called `best_scheme.txt`, open it in your preferred text editor. Now I will explain the different blocks of information you have in the result file. First, you should see something like the next block:
 
 ```
 Settings used
@@ -97,7 +97,7 @@ search            : greedy
 
 ```
 
-In this block it tells you what alignment have been used, what we have chosen for the branchlenghts, which models have been considered, what criteria is used to choose the best model and finally what kind of search we have done in the model space. Now let’s take a look at the real result of the analysis. But first do you remember how many partitions we had in the beginning? 3 codon positions for each gene, therefore 9 partitions to start with! Which partitions are similar? Which ones you think that are enough similar that we could merge them in the same partition? Take a look at the following block to see if your guess was accurate enough!
+In this block it tells you which alignments have been used, what we have chosen for the branchlenghts, which models have been considered, what criterion is used to choose the best model and finally what kind of search we have done in the model space. Now let’s take a look at the real result of the analysis. But first do you remember how many partitions we had in the beginning? Three codon positions for each gene, therefore 9 partitions to start with! Which partitions are similar? Which ones you think are similar enough that we could merge them in the same partition? Take a look at the following block to see if your guess was accurate enough!
 
 
 ```
@@ -163,7 +163,7 @@ END;
 
 ```
 
-Delete these 2 blocks! We don´t need them. Now replace it with the MrBayes lock created by *PartitionFinder*. Save it as `DatasetMB.nex`. We will be using this later. For *IQTree* we don´t need to set the best partitioning scheme as the program will find it as the first step of the analysis. But we would maybe need to create the partition file that can be used to run RaxML on cipres for example (We are not going to do so, but you should be able to do it now that you know how *CIPRES* works)
+Delete these 2 blocks! We don´t need them. Now replace them with the MrBayes block created by *PartitionFinder*. Save it as `DatasetMB.nex`. We will be using this later. For *IQTree* we don´t need to set the best partitioning scheme as the program will find it as the first step of the analysis. But we would maybe need to create the partition file that can be used to run RaxML on CIPRES for example (We are not going to do so, but you should be able to do it now that you know how *CIPRES* works.).
 
 Take a look again to the result of *PartitionFinder* in your text editor. Look at the block for *RaxML*. It should be something like this:
 
