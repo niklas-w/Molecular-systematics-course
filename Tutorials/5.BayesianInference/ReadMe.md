@@ -14,18 +14,19 @@ The first thing is to prepare your dataset (which is in the NEXUS format). MrBay
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes2.png" alt="MrBayes2" width="600"></p>
 
-Or simply add at the end of your file this information:
+Open your text editor and simply add at the end of your `DatasetMB.nex` file this block:
 
+```
 begin mrbayes;
 
-	set autoclose=yes;
-	lset nst=6 rates=invgamma;
-	mcmc ngen=100000 printfreq=1000 samplefreq=1000 savebrlens=yes;
-      sumt burnin=20;
+mcmc ngen=5000000 printfreq=1000 samplefreq=1000 nchains=4 nruns=2 savebrlens=yes;
+sump relburnin=yes burninfrac=0.2;
+sumt relburnin=yes burninfrac=0.2 contype=halfcompat;
+
 end;
+```
 
-
-After you prepare the NEXUS file, the next thing to do is to run the program by writing ”Execute" filename (provide the path of your file) in the terminal. 
+After you prepare the NEXUS file, save it as `DatasetMBrun.nex`. Next, open a terminal, run MrBayes and finally run your analysis by writing ”Execute" filename (provide the path of your file). 
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes3.png" alt="MrBayes3" width="600"></p>
 
