@@ -113,18 +113,8 @@ Click on **Run** button. It should be quite fast! When it is finished close the 
 
 # Analyzing the results with Tracer
 
-After the two BEAST2 analyses have completed (or if you decided not to wait and use [the output](https://github.com/niklas-w/Molecular-systematics-course/tree/master/Data/6.Dataset.log) of our analysis instead), open file [6.Dataset.log](https://github.com/niklas-w/Molecular-systematics-course/tree/master/Data/6.Dataset.log) in the program Tracer. When the main window has opened, choose Import Trace File from the File menu and select the file that BEAST has created called Dataset.log.
+After the **BEAST** analysis is completed we will check the trace files in **Tracer**. Open **Tracer**. 
 
-Remember that MCMC is a stochastic algorithm so the actual numbers will not be exactly the same as those depicted in the figure. On the left hand side is a list of the different quantities that BEAST has logged to file. There are traces for the posterior (this is the natural logarithm of the product of the tree likelihood and the prior density), and the continuous parameters. Selecting a trace on the left brings up analyses for this trace on the right hand side depending on tab that is selected. When first opened, the ‘posterior’ trace is selected and various statistics of this trace are shown under the Estimates tab. In the top right of the window is a table of calculated statistics for the selected trace.
-
-In the bottom left part of the Tracer window, you'll see statistics for the estimate of the posterior probability (just named "posterior"), the likelihood, and the prior probability (just named "prior"), as well as for the parameters estimated during the analysis (except the phylogeny, which also represents a set of parameters). The second column in this part shows the mean estimates for each parameter and their ESS values. Do the ESS values of all parameters indicate stationarity?
-
-With the posterior probability still being selected in the list at the bottom left, click on the tab for "Trace" (at the very top right). You will see how the posterior probability changed over the course of the MCMC. This trace plot should ideally have the form of a "hairy caterpillar", but as you can see from the next screenshot, this is not the case for the posterior probability.
-
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast11.png" alt="Beast11" width="600"></p>
-
-
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast12.png" alt="Beast12" width="600"></p>
 
 # Obtaining the tree
 
