@@ -7,6 +7,18 @@ In this tutorial, we will analyse the butterfly dataset with one of the fastest 
 
 The quickest is to try out the IQ-TREE [web server](http://iqtree.cibiv.univie.ac.at/), where you only need to upload an alignment, choose the options and start the analysis.
 
+** Command line instructions**
+
+iqtree -s file.phy -spp Partitions.txt -m MFP+MERGE -bb 1000 -arlt 1000
+
+Notes:
+iqtree funtion= will call the executable
+-s: will call the alignment
+-spp: is your patition file
+-m MFP+MERGE: will search for the evolutionary models of your partitions.
+-bb: will perfom Ultrafast Boostrap
+-arlt: will perform the SH-aLRT test
+
 **Tree inference**
 
 Tree Inference is one of the most frequently used features of IQ-TREE and allows users to carry out phylogenetic analysis on a multiple sequence alignment (MSA). In the most basic case, no more than an MSA file is required to submit the job. Without further input, IQ-TREE will run with the default parameters and auto-detect the sequence type as well as the best-fitting substitution model. Additionally, Ultrafast Bootstrap ([Hoang et al., 2018](https://academic.oup.com/mbe/article/35/2/518/4565479)) and the SH-aLRT branch test ([Guindon et al., 2010](https://academic.oup.com/sysbio/article/59/3/307/1702850)) will be performed.
