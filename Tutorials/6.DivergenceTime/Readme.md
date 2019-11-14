@@ -1,8 +1,8 @@
 
 
-# Divergence Time Inference with BEAST 2
+# Divergence Time Inference with BEAST2
 
-In previous days we saw how to prepare molecular datasets, how to find the best partitioning scheme and best substitution model; and we finally saw how to infere phylogenies using **Bayesian** and **Maximum Likelihood** approaches. We very briefly saw how to interpret the obtained trees and how to check the obtained results.
+In previous days we saw how to prepare molecular datasets, how to find the best partitioning scheme and best substitution model; and we finally saw how to infer phylogenies using **Bayesian** and **Maximum Likelihood** approaches. We very briefly saw how to interpret the obtained trees and how to check the obtained results.
 
 In this tutorial, we will demonstrate how time-calibrated phylogenies can be inferred using a Bayesian approach. For this we will use the program BEAST2, which is a cross-platform program for Bayesian phylogenetic analysis of molecular sequences. BEAST 2 includes a graphical user-interface for setting up standard analyses and a suit of programs for analysing the results.
 
@@ -38,7 +38,7 @@ end;
 
 ```
 
-Copy/Paste it at the end of your nexus file and save it as `DatasetBEAST.nex`. Now we want to create **BEAST**'s comand file which is a `\*.xml` file. This is done using the program **BEAUti**.
+Copy/Paste it at the end of your nexus file and save it as `DatasetBEAST.nex`. Now we want to create **BEAST**'s command file which is a `*.xml` file. This is done using the program **BEAUti**.
 
 Open **BEAUti** from the BEAST2 folder, and import the alignment. To do so, click on **"File"** and click on **"Import Alignment"**. Find your alignment file called `DatasetBEAST.nex` and import it. The BEAUti window should then look as shown in the screenshot below.
 
@@ -46,7 +46,7 @@ Open **BEAUti** from the BEAST2 folder, and import the alignment. To do so, clic
 
 The BEAUti interface has six different tabs, of which (at the top of the window), the first one "Partitions" is currently selected. First need to specify settings regarding the partitioning in the currently open tab. 
 
-Select the 3 partitions rows and click on **Link Trees** and **Link Clock Models** near the top of the BEAUti window. This will force BEAST2 to use all partitions together to infere a tree or a clock model. Also rename **Clock Model** name of the partitions to `clock` by changing the **Clock Name** for any of the partitions and hitting enter! Do the same for the **Tree** and call it `tree`. Now you should have something like this:
+Select the 3 partitions rows and click on **Link Trees** and **Link Clock Models** near the top of the BEAUti window. This will force BEAST2 to use all partitions together to infer a tree or a clock model. Also rename **Clock Model** name of the partitions to `clock` by changing the **Clock Name** for any of the partitions and hitting enter! Do the same for the **Tree** and call it `tree`. Now you should have something like this:
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Beast2.png" alt="Beast2" width="800"></p>
 
@@ -61,7 +61,7 @@ Subset | Best Model | # sites    | subset id                        | Partition 
 
 Click on the **Site Model** tab next. In this tab we can specify the substitution models for all our partitions. This is a crucial step for our analysis to run well, so please pay extra attention.
 
-Select the **Subset1** partition in the panel at the left. In front of the **Subst Model** click on the drop menu and choose `GTR`. To choose the `+G` option in our model, look for **Gamma Category Count** and write `4` in front of it in the empty space. Now to apply the `+I` option in the model, look for **Proportion Invariant** option, insert an inicial value of `0.1` in the empty space and click in **estimate** box.
+Select the **Subset1** partition in the panel at the left. In front of the **Subst Model** click on the drop menu and choose `GTR`. To choose the `+G` option in our model, look for **Gamma Category Count** and write `4` in front of it in the empty space. Now to apply the `+I` option in the model, look for **Proportion Invariant** option, insert an initial value of `0.1` in the empty space and click in **estimate** box.
 
 Now you should have something like this:
 
@@ -73,11 +73,11 @@ Next, click on the **Clock Model** tab. From the drop-down menu choose **Relaxed
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Beast4.png" alt="Beast4" width="800"></p>
 
-Follow by clicking on the **Priors** tab. From the drop-down menu in front of the **Tree.t:tree** *prior*, select **Birth Death Model**. By doing so we add a parameter to the model for the extinction rate. If we would choose the alternative Yule model (Yule 1925), we would assume that no extinction have ever occurred. As this seems rather unrealistic, the birth-death model (Gernhard 2008) is in most cases the more appropriate choice. 
+Follow by clicking on the **Priors** tab. From the drop-down menu in front of the **Tree.t:tree** *prior*, select **Birth Death Model**. By doing so we add a parameter to the model for the extinction rate. If we would choose the alternative Yule model (Yule 1925), we would assume that no extinction has ever occurred. As this seems rather unrealistic, the birth-death model (Gernhard 2008) is in most cases the more appropriate choice. 
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Beast5.png" alt="Beast5" width="800"></p>
 
-Now on the bottom of the *priors* list you have the possibility of creating new ones by clicking on **Add Prior**. One of the important informations that we want to include in a **Time Calibration Phylogeny** is the *Time* dimension. We will add this ***Prior*** using this button. The calibration points that we will be using for this exercize are extracted from Niklas' paper on the timing of butterflies. We will add time constraints on the age of the **most recent common ancester** of a clade. The constraints that we will be using now are the ones in the next table:
+Now on the bottom of the *priors* list you have the possibility of creating new ones by clicking on **Add Prior**. One of the important information that we want to include in a **Time Calibration Phylogeny** is the *Time* dimension. We will add this ***Prior*** using this button. The calibration points that we will be using for this exercise are extracted from Niklas' paper on the timing of butterflies. We will add time constraints on the age of the **most recent common ancestor** of a clade. The constraints that we will be using now are the ones in the next table:
 
 
 | Constraint # | Clade | min Age | max Age |
@@ -85,11 +85,11 @@ Now on the bottom of the *priors* list you have the possibility of creating new 
 | 1 | Araschnia, Aglais, Hypanartia and Vanessa | 34 My | 60 My |
 | 2 | Melitaea, Chlosyne, Eresia and Phyciodes | 28 My | - |
 
-Now click on **Add Prior**. A pop-up windows should open asking **Which prior do you want to add**. Choose **MRCA prior**. and click `OK`.In **Taxon set label** write `Const1`for the first constraint. Add the 4 species from the table above by selecting them and hitting the arrows toward right empty space. You should have something like this:
+Now click on **Add Prior**. A pop-up window should open asking **Which prior do you want to add**. Choose **MRCA prior**. and click `OK`. In **Taxon set label** write `Const1`for the first constraint. Add the 4 species from the table above by selecting them and hitting the arrows toward right empty space. You should have something like this:
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Beast6.png" alt="Beast6" width="800"></p>
 
-Now hit **OK** and create the next constraint named `Const2`. Now you should have your two constraints. Force the monophyly on these clades by clicking on **monophyletic** box in front of their priors. Now for the first constraint, click on the drop-down menu in front of it and choose **Uniform** distribution. Then click on the triangle at the left of the **Const1.prior** to choose the ages. Here the **Lower** woll be `34` and the **Upper** `60`. For the **Const2.prior** use a **Log Normal** distribution. In this distribution you have 2 parameters, **M** and **S**. **M** parameter is the mean and the **S** parameter define how asymetrical is the distribution. As our min age for this clade is `28`, you can introduce this number in **Offset** and insert let say `40` for the **M** parameter. Now modifying the **S** value you can get a distribution which make sense for your constraint. Here we will use a value of `3.4` for **S** but play with this value a little until you get a feeling for how it affect the distribution. 
+Now hit **OK** and create the next constraint named `Const2`. Now you should have your two constraints. Force the monophyly on these clades by clicking on **monophyletic** box in front of their priors. Now for the first constraint, click on the drop-down menu in front of it and choose **Uniform** distribution. Then click on the triangle at the left of the **Const1.prior** to choose the ages. Here the **Lower** will be `34` and the **Upper** `60`. For the **Const2.prior** use a **Log Normal** distribution. In this distribution you have 2 parameters, **M** and **S**. **M** parameter is the mean and the **S** parameter define how asymmetrical is the distribution. As our min age for this clade is `28`, you can introduce this number in **Offset** and insert let say `40` for the **M** parameter. Now modifying the **S** value you can get a distribution which make sense for your constraint. Here we will use a value of `3.4` for **S** but play with this value a little until you get a feeling for how it affects the distribution. 
 
 Now you should have this:
 
@@ -109,39 +109,23 @@ Now click on **File** > **Save**, choose the folder you want, name your file `Da
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Beast10.png" alt="Beast10" width="800"></p>
 
-Click on **Run** button. It should be quite fast! When it is finished close the extra windon, it will ask you if you want to save, respond **NO**.
+Click on **Run** button. It should be quite fast! When it is finished close the extra window, it will ask you if you want to save, respond **NO**.
 
-# Analyzing the results with Tracer
+## Analysing the results with Tracer
 
-After the **BEAST** analysis is completed we will check the trace files in **Tracer**. Open **Tracer**. 
+After the **BEAST** analysis is completed we will check the trace files in **Tracer**. Open **Tracer**. Drag and drop in the empty space at the left side of **Tracer**'s window, the log file created by BEAST named `DatasetBEAST.log`. You should see a trace somehow similar to this:
 
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Tracer.png" alt="Tracer" width="800"></p>
 
-# Obtaining the tree
-
-BEAST also produces a posterior sample of phylogenetic time-trees along with its sample of parameter estimates. These need to be summarized using the program TreeAnnotator. This will take the set of trees and find the best supported one. It will then annotate this representative summary tree with the mean ages of all the nodes and the corresponding 95% HPD ranges. It will also calculate the posterior clade probability for each node. Run the TreeAnnotator program and set it up as depicted in Figure 
-
-The burnin is the number of trees to remove from the start of the sample. Unlike Tracer which specifies the number of steps as a burnin, in Tree Annotator you need to specify the actual number of trees. For this run, you specified a chain length of 5,000,000 steps sampling every 1,000 steps. Thus the trees file will contain 5,000 trees and so to specify a 10% burnin in the top text field.
-
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast13.png" alt="Beast13" width="600"></p>
-
-For the input file, select the trees file that BEAST created and select a file for the output (here we called it [6.Final.tree](https://github.com/niklas-w/Molecular-systematics-course/tree/master/Data/6.Final.tree)). Now press Run and wait for the program to finish.
-
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast14.png" alt="Beast14" width="600"></p>
-
-Finally, we can visualize the tree in FigTree. Run this program, and open the Final.tree file by using the Open command in the File menu. The tree should appear.
-
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast15.png" alt="Beast15" width="600"></p>
-
-To add a time scale to the phylogeny, set a tick next to "Scale Axis" in the menu on the left. Also click the triangle next to it, remove the tick next to "Show grid" in the newly opened menu field, but set a tick next to "Reverse axis" instead. The result is shown in the next screenshot.
-
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast16.png" alt="Beast16" width="600"></p>
-
-To also see the confidence intervals for the age estimates, click on the triangle next to "Node Bars" in the menu on the left. Also set a tick in the checkbox for "Node Bars". Choose the first item from the drop-down menu for "Display", the "height_95%_HPD" The phylogeny should then look as shown below.
-
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast17.png" alt="Beast17" width="600"></p>
-Question
-
-1. Is this topology consistent with that recovered from IQTREE and RAxML?
+As you can see, clearly 200,000 generations are not enough! That is why I have run this analysis for 20,000,000 generations for you to check the trace file. Download it from [Data folder](https://github.com/niklas-w/Molecular-systematics-course/tree/master/Data). It is called `DatasetBEAST20M.log`. Open it in a new **Tracer** window. Is it enough or we have to run the analysis for longer? Check the trace for different parameters. Did all of them converged? is there any parameter which is still not well sampled?
 
 
-(This tutorial is modified from https://github.com/leimurillo/tutorials/tree/master/bayesian_phylogeny_inference).
+## Obtaining the Time-tree
+
+Now we will use the program **TreeAnnotator** from BEAST package. Open the program. In front of the **Burning Percentage** write `10`, In front of the **Input Tree File** choose the `tree.trees` file created by BEAST and in front of the **Output File** write `tree.trees.tre`. Click on the box in front of **Low Memory**. You should have this now:
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Tree.png" alt="Tree" width="800"></p>
+
+
+Now hit **Run**. When the analysis is finished, open your final `tree.trees.tre` file in **FigTree**. Any surprises?
+
