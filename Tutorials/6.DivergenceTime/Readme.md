@@ -77,7 +77,7 @@ Follow by clicking on the **Priors** tab. From the drop-down menu in front of th
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Beast5.png" alt="Beast5" width="800"></p>
 
-Now on the bottom of the *priors* list you have the possibility of creating new ones by clicking on **Add Prior**. One of the important informations that we want to include in a **Time Calibration Phylogeny** is the *Time* dimension. We will add this ***Prior*** using this button. The calibration points that we will be using for this exercize are extracted from Niklas' paper on the timing of butterflies. We will add time constraints on the age of **the most common ancester** of a clade. The constraints that we will be using now are the ones in the next table:
+Now on the bottom of the *priors* list you have the possibility of creating new ones by clicking on **Add Prior**. One of the important informations that we want to include in a **Time Calibration Phylogeny** is the *Time* dimension. We will add this ***Prior*** using this button. The calibration points that we will be using for this exercize are extracted from Niklas' paper on the timing of butterflies. We will add time constraints on the age of the **most recent common ancester** of a clade. The constraints that we will be using now are the ones in the next table:
 
 
 | Constraint # | Clade | min Age | max Age |
@@ -85,18 +85,31 @@ Now on the bottom of the *priors* list you have the possibility of creating new 
 | 1 | Araschnia, Aglais, Hypanartia and Vanessa | 34 My | 60 My |
 | 2 | Melitaea, Chlosyne, Eresia and Phyciodes | 28 My | - |
 
+Now click on **Add Prior**. A pop-up windows should open asking **Which prior do you want to add**. Choose **MRCA prior**. and click `OK`.In **Taxon set label** write `Const1`for the first constraint. Add the 4 species from the table above by selecting them and hitting the arrows toward right empty space. You should have something like this:
 
-Most of the other items shown in the "Prior" panel correspond to prior densities placed on the parameters of the substitution models for the partitions. You may keep the default priors for each of these parameters. However, to allow time calibration of the phylogeny, a prior density still needs to be specified for at least one divergence time, otherwise BEAST2 would have very little information to estimate branch lengths according to an absolute time scale. 
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Beast6.png" alt="Beast6" width="800"></p>
 
-Continue to the "MCMC" tab, where you can specify the run length. This analysis will require a few hundred million iterations before the MCMC chain reaches full stationarity, which would take several days of run time. For this exercise we recommend that you use a chain length of 5,000,000 million states and either run the analysis or cancel the run after following it for some time, and then use output files from our analysis (you'll find the links below) for the rest of the tutorial. 
+Now hit **OK** and create the next constraint named `Const2`. Now you should have your two constraints. Force the monophyly on these clades by clicking on **monophyletic** box in front of their priors. Now for the first constraint, click on the drop-down menu in front of it and choose **Uniform** distribution. Then click on the triangle at the left of the **Const1.prior** to choose the ages. Here the **Lower** woll be `34` and the **Upper** `60`. For the **Const2.prior** use a **Log Normal** distribution. In this distribution you have 2 parameters, **M** and **S**. **M** parameter is the mean and the **S** parameter define how asymetrical is the distribution. As our min age for this clade is `28`, you can introduce this number in **Offset** and insert let say `40` for the **M** parameter. Now modifying the **S** value you can get a distribution which make sense for your constraint. Here we will use a value of `3.4` for **S** but play with this value a little until you get a feeling for how it affect the distribution. 
 
-Also change the names of the output files: Click on the triangle to the left of "tracelog" and specify "Dataset.log" as the name of the log file. In the next field for "Log Every", set the number to "1,000" so that only every 1,000 MCMC state is written to the log file. Click on the triangle again, then click on the black triangle to the left of "treelog". Specify "Dataset.trees" as the name of the tree file and again use "1,000" as the number in the field for "Log Every". When the window looks as in the below screenshot, click on "Save" in BEAUti's "File" menu, and name the resulting file in XML format Dataset.xml. You can download [6.Dataset.xml](https://github.com/niklas-w/Molecular-systematics-course/tree/master/Data/6.Dataset.xml) If you did not manage to complete this step.
+Now you should have this:
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast9.png" alt="Beast9" width="600"></p>
 
-Now, open the program BEAST2 and select the file [6.Dataset.xml](https://github.com/niklas-w/Molecular-systematics-course/tree/master/Data/6.Dataset.xml) as input file, as shown in the screenshot below. When you click the "Run" button, BEAST2 will start the analysis.
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Beast7.png" alt="Beast7" width="800"></p>
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast10.png" alt="Beast10" width="600"></p>
+Continue to the **MCMC** tab, where you can specify the run length. This analysis will require millions of **generation** before the MCMC chain reaches full stationarity (converges). For this exercise we recommend that you use a **Chain Length** of `200,000` states. Also modify the **Num Initialization Attempts** to `100`. Click on the triangle by **tracelog** and in **Log Every** modify the number to `200`. You should have something exactly like this now:
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Beast8.png" alt="Beast8" width="800"></p>
+
+Now close the **tracelog** by clicking on the triangle again and click on the triangles at the left of both **screenlog** and **treelog.t:tree** and modify the **Log Every** option to `200` also. You should now have this on the screen:
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Beast9.png" alt="Beast9" width="800"></p>
+
+
+Now click on **File** > **Save**, choose the folder you want, name your file `Dataset.xml` and click on **Save** again. Close **BEAUTi**. Now we will run the `Dataset.xml` file. Open **BEAST** and click on **Choose File**. You should be seeing this:
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Beast10.png" alt="Beast10" width="800"></p>
+
+Click on **Run** button. It should be quite fast! When it is finished close the extra windon, it will ask you if you want to save, respond **NO**.
 
 # Analyzing the results with Tracer
 
