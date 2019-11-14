@@ -79,6 +79,8 @@ Open the file .treefile retrieved from IQTREE and .tre from raxmlGUI 2.0 in FigT
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML4.png" alt="RAxML4" width="600"></p>
 
+The tree is rooted by default on the first taxon in your dataset or on the longest branch in the dataset. In our case we should reroot the tree on the branch leading to *Asterocampa* (which is our outgroup). In FigTree, click on the branch leading to *Asterocampa* to select it, and then click on the "Reroot" button in FigTree.
+
 **Questions**
 
 1. Are the RAxML bootstrap values higher/lower compared to those recovered from the UFBoot2 in IQTREE?
