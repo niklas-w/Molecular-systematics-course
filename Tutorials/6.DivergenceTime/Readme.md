@@ -2,7 +2,6 @@
 
 # Divergence Time Inference with BEAST 2
 
-This tutorial is modified from https://github.com/leimurillo/tutorials/tree/master/bayesian_phylogeny_inference.
 
 Bayesian inference differs from Maximum Likelihood becase take into account prior probabilities. In the context of phylogenetic inference, this means that parameters could be constrained towards values (from fossils or biogeographic evidence) that are considered realistic based on the findings of previous studies on the group of interest. These in turn can then inform the timing in other parts of the phylogeny so that an overall timeline of diversification can be estimated. 
 
@@ -105,4 +104,4 @@ Question
 1. Is this topology consistent with that recovered from IQTREE and RAxML?
 
 
-
+(This tutorial is modified from https://github.com/leimurillo/tutorials/tree/master/bayesian_phylogeny_inference).
