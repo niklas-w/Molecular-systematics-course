@@ -44,7 +44,7 @@ search = greedy;
 
 ```
 
-For *ALIGNMENT FILE* section you have to provide the name of the alignment file which is in this case `Dataset.phy`. But in this case as we are going to run the job on an online platform, the platform ask us to use `alignment = infile.phy;`. In the *DATA BLOCKS* you have to use the partition information we created yesterday and saved as `partitionsCodon.txt`. Take a look at the other options, what else you can modify?
+For *ALIGNMENT FILE* section you have to provide the name of the alignment file which is in this case `Dataset.phy`. But in this case as we are going to run the job on an online platform, the platform ask us to use `alignment = infile.phy;`. In the *DATA BLOCKS* you have to use the partition information we created yesterday and saved as `partitionsCodon.txt`. Take a look at the other options, what else you can modify? Remember to save the changes t your file.
 
 We are going to use an online platform to run *PartitionFinder* as running it on your computer need spending some extra time for the installation step. The platform that we are going to use now is called *CIPRES*. It is a very useful online platform where you can run plenty of other programs also. But you need to register first, so click and open (in a new window) the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action). You will see something like the next image. If you don’t have an account already, click or the red rectangle and register.
 
@@ -58,4 +58,9 @@ You have to click on *Create New Folder* and as *Label* you use `Course`. Now un
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres3.png" alt="Cipres3" width="800"></p>
 
-Click on *Data* subfolder then on *Upload/Enter Data*. Now you should be able to add the needed files by clicking on *Browse* and selecting the `Dataset.phy` and `partition_finder.cfg` files.
+Click on *Data* subfolder then on *Upload/Enter Data*. Now you should be able to add the needed files by clicking on *Browse* and selecting the `Dataset.phy` and `partition_finder.cfg` files. Now click on *Task* folder and *Create New Task* button. You should have something like the following:
+
+
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres4.png" alt="Cipres4" width="600"></p>
+
+
