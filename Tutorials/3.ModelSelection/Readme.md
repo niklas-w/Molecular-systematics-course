@@ -46,7 +46,7 @@ search = greedy;
 
 For ***ALIGNMENT FILE*** section you have to provide the name of the alignment file which is in this case `Dataset.phy`. But in this case as we are going to run the job on an online platform, the platform ask us to use `alignment = infile.phy;`. In the ***DATA BLOCKS*** you have to use the partition information we created yesterday and saved as `partitionsCodon.txt`. Take a look at the other options, what else you can modify? Remember to save the changes t your file.
 
-We are going to use an online platform to run *PartitionFinder* as running it on your computer need spending some extra time for the installation step. The platform that we are going to use now is called ***CIPRES***. It is a very useful online platform using very fast super computers where you can run plenty of other programs also. But you need to register first, so click and open (in a new window) the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action). You will see something like the next image. If you don’t have an account already, click or the red rectangle and register.
+We are going to use an online platform to run *PartitionFinder* as running it on your computer need spending some extra time for the installation step. The platform that we are going to use now is called ***CIPRES***. It is a very useful online platform using very fast super computers where you can run plenty of other programs also. But you need to register first, so click and open (in a new window) the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action). You will see something like the next image. If you don’t have an account already, click on the option in the red rectangle and register.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres.png" alt="Cipres" width="800"></p>
 
@@ -84,7 +84,7 @@ Now we want to export the results to our computer! So now you should be seeing s
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres8.png" alt="Cipres8" width="600"></p>
 
-Now we want to download the \*.zip file marked in a red rectangle again. Download it and extract it so we can take a look at them. Inside your `analysis.zip`, you will find a file called `best_scheme.txt`, open it in your prefered text editor. Now I will explain the different blocks of information you have in the result file. First, you should see something like the next block:
+Now we want to download the \*.zip file marked in a red rectangle again. Download it and extract it so we can take a look at them. Inside your `analysis.zip`, you will find a file called `best_scheme.txt`, open it in your preferred text editor. Now I will explain the different blocks of information you have in the result file. First, you should see something like the next block:
 
 ```
 Settings used
@@ -97,7 +97,7 @@ search            : greedy
 
 ```
 
-In this block it tells you what alignment have been used, what we chosed for the branchlenghts, which models have been considered, what criteria is used to chose the best model and finally what kind of search we have done in the model space. Now lets take a look at the real result of the analisys. But first do you remember how many partitions we had in the beggining? 3 codon positions for each gene, therefore 9 partitions to start with! Which partitions are similar? Which ones you think that are enough similar that we could merge them in the same partition? Take a look at the following block to see if your guess was accurate enough!
+In this block it tells you what alignment have been used, what we have chosen for the branchlenghts, which models have been considered, what criteria is used to choose the best model and finally what kind of search we have done in the model space. Now let’s take a look at the real result of the analysis. But first do you remember how many partitions we had in the beginning? 3 codon positions for each gene, therefore 9 partitions to start with! Which partitions are similar? Which ones you think that are enough similar that we could merge them in the same partition? Take a look at the following block to see if your guess was accurate enough!
 
 
 ```
@@ -116,7 +116,7 @@ Subset | Best Model | # sites    | subset id                        | Partition 
 3      | GTR+G      | 555        | 9962ca78e0bdee4c13544ee243422b2d | EF1a_pos3, Wingless_pos3
 ```
 
-Here in the result you have 2 sub-blocks. In the first one you get some general information about your results as the likelihood of the scheme choosed as the best, or number of parameters or .... Then you can see the subsets chosen as the best scheme for partitioning. *Were you correct in your guess?* 
+Here in the result you have 2 sub-blocks. In the first one you get some general information about your results as the likelihood of the scheme chosen as the best, or number of parameters or .... Then you can see the subsets chosen as the best scheme for partitioning. *Were you correct in your guess?* 
 
 Next you see different blocks which can be used for running different programs. Here we are going to use the block for MrBayes first. You should be able to find it easily in your text editor. It should be similar to this:
 
@@ -141,7 +141,7 @@ begin mrbayes;
 end;
 ```
 
-Now open the nexus file we created, `Dataset.nex` in your prefered text editor (or my preffered text editor actually!). As we saw yesterday the data in this format is organized in blocks. The first block is your data, then you will have a block that *Aliview* have created. Something like this:
+Now open the nexus file we created, `Dataset.nex` in your preferred text editor (or my preferred text editor actually!). As we saw yesterday the data in this format is organized in blocks. The first block is your data, then you will have a block that *Aliview* have created. Something like this:
 
 ```
 
