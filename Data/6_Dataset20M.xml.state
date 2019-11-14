@@ -1,0 +1,63 @@
+<itsabeastystatewerein version='2.0' sample='20000000'>
+<statenode id='Tree.t:tree'>((((0:29.311984808369697,(1:27.612047007385847,(2:26.000838190676266,3:26.000838190676266)17:1.6112088167095813)18:1.6999378009838502)19:11.37938213638596,(((4:26.106079072799243,5:26.106079072799243)28:9.126430500573402,(6:26.643464556058003,7:26.643464556058003)29:8.589045017314643)30:1.9973236112612227,12:37.22983318463387)22:3.461533760121789)20:1.4568890478896748,((8:30.472744861228506,11:30.472744861228506)31:3.2667855474631864,(9:25.293914542076934,10:25.293914542076934)24:8.445615866614759)27:8.40872558395364)23:6.193303944325315,((13:39.212418235004186,14:39.212418235004186)25:3.4634713704520053,(15:39.58577268717923,16:39.58577268717923)26:3.090116918276962)21:5.665670331514455)32:0.0</statenode>
+<statenode id='gammaShape.s:Subset1'>gammaShape.s:Subset1[1 1] (0.001,1000.0): 0.19561362918470093 </statenode>
+<statenode id='kappa.s:Subset2'>kappa.s:Subset2[1 1] (0.0,Infinity): 13.247500415902515 </statenode>
+<statenode id='gammaShape.s:Subset2'>gammaShape.s:Subset2[1 1] (0.001,1000.0): 0.44915203599740516 </statenode>
+<statenode id='proportionInvariant.s:Subset1'>proportionInvariant.s:Subset1[1 1] (0.0,1.0): 0.7891087306641518 </statenode>
+<statenode id='rateAC.s:Subset3'>rateAC.s:Subset3[1 1] (0.0,Infinity): 0.07754259834382103 </statenode>
+<statenode id='rateAG.s:Subset3'>rateAG.s:Subset3[1 1] (0.0,Infinity): 1.3112082335444966 </statenode>
+<statenode id='rateAT.s:Subset3'>rateAT.s:Subset3[1 1] (0.0,Infinity): 0.2788048835407334 </statenode>
+<statenode id='rateCG.s:Subset3'>rateCG.s:Subset3[1 1] (0.0,Infinity): 0.017247656652440675 </statenode>
+<statenode id='rateGT.s:Subset3'>rateGT.s:Subset3[1 1] (0.0,Infinity): 0.08996863497706917 </statenode>
+<statenode id='gammaShape.s:Subset3'>gammaShape.s:Subset3[1 1] (0.001,1000.0): 0.6051801792542436 </statenode>
+<statenode id='rateAC.s:Subset1'>rateAC.s:Subset1[1 1] (0.0,Infinity): 0.017636181441919224 </statenode>
+<statenode id='rateAG.s:Subset1'>rateAG.s:Subset1[1 1] (0.0,Infinity): 0.01858545596236455 </statenode>
+<statenode id='rateAT.s:Subset1'>rateAT.s:Subset1[1 1] (0.0,Infinity): 0.010948316046207355 </statenode>
+<statenode id='rateCG.s:Subset1'>rateCG.s:Subset1[1 1] (0.0,Infinity): 0.0025293807668343737 </statenode>
+<statenode id='rateGT.s:Subset1'>rateGT.s:Subset1[1 1] (0.0,Infinity): 0.004575918569141247 </statenode>
+<statenode id='ucldStdev.c:clock'>ucldStdev.c:clock[1 1] (0.0,Infinity): 0.20971715389177384 </statenode>
+<statenode id='rateCategories.c:clock'>rateCategories.c:clock[32 1] (0,31): 18 0 17 28 0 0 26 7 17 23 31 25 22 9 12 18 20 3 16 13 25 21 5 2 18 17 12 28 30 8 6 20 </statenode>
+<statenode id='BDBirthRate.t:tree'>BDBirthRate.t:tree[1 1] (0.0,10000.0): 0.024475858278725185 </statenode>
+<statenode id='BDDeathRate.t:tree'>BDDeathRate.t:tree[1 1] (0.0,1.0): 0.09573940940327871 </statenode>
+<statenode id='ucldMean.c:clock'>ucldMean.c:clock[1 1] (-Infinity,Infinity): 0.008461051987577219 </statenode>
+<statenode id='freqParameter.s:Subset3'>freqParameter.s:Subset3[4 1] (0.0,1.0): 0.19296723745641498 0.3957030577806628 0.1668160266009348 0.24451367816198782 </statenode>
+<statenode id='freqParameter.s:Subset2'>freqParameter.s:Subset2[4 1] (0.0,1.0): 0.4804945098981226 0.05854178415321454 0.012983339093982905 0.4479803668546809 </statenode>
+<statenode id='freqParameter.s:Subset1'>freqParameter.s:Subset1[4 1] (0.0,1.0): 0.27330143691306413 0.20739921997655003 0.23993419873551286 0.2793651443748705 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"gammaShapeScaler.s:Subset1","p":0.7235380972709037,"accept":2264,"reject":14702,"acceptFC":2254,"rejectFC":14678,"rejectIv":0,"rejectOp":0},
+{"id":"KappaScaler.s:Subset2","p":0.6186442732908173,"accept":3783,"reject":13402,"acceptFC":3780,"rejectFC":13385,"rejectIv":0,"rejectOp":0},
+{"id":"gammaShapeScaler.s:Subset2","p":0.5512450482891296,"accept":4296,"reject":12803,"acceptFC":4293,"rejectFC":12781,"rejectIv":0,"rejectOp":0},
+{"id":"proportionInvariantScaler.s:Subset1","p":0.6156960377413883,"accept":899,"reject":16287,"acceptFC":893,"rejectFC":16265,"rejectIv":6249,"rejectOp":6249},
+{"id":"RateACScaler.s:Subset3","p":0.3295670134158263,"accept":5057,"reject":12038,"acceptFC":5044,"rejectFC":12024,"rejectIv":0,"rejectOp":0},
+{"id":"RateAGScaler.s:Subset3","p":0.4885689585777984,"accept":4350,"reject":12943,"acceptFC":4336,"rejectFC":12919,"rejectIv":0,"rejectOp":0},
+{"id":"RateATScaler.s:Subset3","p":0.4463293147021917,"accept":4119,"reject":13007,"acceptFC":4110,"rejectFC":12994,"rejectIv":0,"rejectOp":0},
+{"id":"RateCGScaler.s:Subset3","p":0.19009850878463355,"accept":5538,"reject":11475,"acceptFC":5532,"rejectFC":11452,"rejectIv":0,"rejectOp":0},
+{"id":"RateGTScaler.s:Subset3","p":0.36183911830640003,"accept":4317,"reject":12670,"acceptFC":4310,"rejectFC":12651,"rejectIv":0,"rejectOp":0},
+{"id":"gammaShapeScaler.s:Subset3","p":0.5861354418053781,"accept":3941,"reject":13009,"acceptFC":3935,"rejectFC":12988,"rejectIv":0,"rejectOp":0},
+{"id":"RateACScaler.s:Subset1","p":0.2831441825804755,"accept":5071,"reject":12159,"acceptFC":5061,"rejectFC":12136,"rejectIv":0,"rejectOp":0},
+{"id":"RateAGScaler.s:Subset1","p":0.3969174754033341,"accept":4386,"reject":12764,"acceptFC":4373,"rejectFC":12756,"rejectIv":0,"rejectOp":0},
+{"id":"RateATScaler.s:Subset1","p":0.2665657946988857,"accept":4613,"reject":12339,"acceptFC":4599,"rejectFC":12323,"rejectIv":0,"rejectOp":0},
+{"id":"RateCGScaler.s:Subset1","p":0.2307096412108355,"accept":5638,"reject":11545,"acceptFC":5627,"rejectFC":11530,"rejectIv":0,"rejectOp":0},
+{"id":"RateGTScaler.s:Subset1","p":0.19938350412000494,"accept":4953,"reject":12065,"acceptFC":4944,"rejectFC":12046,"rejectIv":0,"rejectOp":0},
+{"id":"ucldStdevScaler.c:clock","p":0.6327032438121556,"accept":207949,"reject":304819,"acceptFC":207927,"rejectFC":304019,"rejectIv":0,"rejectOp":0},
+{"id":"CategoriesRandomWalk.c:clock","p":"NaN","accept":1002508,"reject":712206,"acceptFC":1001784,"rejectFC":710084,"rejectIv":608609,"rejectOp":608609},
+{"id":"CategoriesSwapOperator.c:clock","p":"NaN","accept":632276,"reject":1080192,"acceptFC":632029,"rejectFC":1077659,"rejectIv":0,"rejectOp":0},
+{"id":"CategoriesUniform.c:clock","p":"NaN","accept":886870,"reject":824191,"acceptFC":886526,"rejectFC":821859,"rejectIv":0,"rejectOp":0},
+{"id":"BirthDeathTreeScaler.t:tree","p":0.89976379430847,"accept":69708,"reject":444449,"acceptFC":69667,"rejectFC":443622,"rejectIv":203042,"rejectOp":0},
+{"id":"BirthDeathTreeRootScaler.t:tree","p":0.6690251943120452,"accept":49731,"reject":463973,"acceptFC":49688,"rejectFC":463188,"rejectIv":155205,"rejectOp":155205},
+{"id":"BirthDeathUniformOperator.t:tree","p":"NaN","accept":1513701,"reject":3622231,"acceptFC":1512727,"rejectFC":3614752,"rejectIv":202527,"rejectOp":0},
+{"id":"BirthDeathSubtreeSlide.t:tree","p":4.104560182386806,"accept":1028097,"reject":1541543,"acceptFC":1027297,"rejectFC":1538147,"rejectIv":336169,"rejectOp":177295},
+{"id":"BirthDeathNarrow.t:tree","p":"NaN","accept":505597,"reject":2064436,"acceptFC":505380,"rejectFC":2060468,"rejectIv":230394,"rejectOp":0},
+{"id":"BirthDeathWide.t:tree","p":"NaN","accept":4916,"reject":507626,"acceptFC":4915,"rejectFC":506795,"rejectIv":420054,"rejectOp":264864},
+{"id":"BirthDeathWilsonBalding.t:tree","p":"NaN","accept":4792,"reject":508497,"acceptFC":4791,"rejectFC":507621,"rejectIv":334406,"rejectOp":106357},
+{"id":"BirthRateScaler.t:tree","p":0.2630575595944132,"accept":119972,"reject":394529,"acceptFC":119332,"rejectFC":394315,"rejectIv":0,"rejectOp":0},
+{"id":"DeathRateScaler.t:tree","p":0.25722199515946803,"accept":236833,"reject":276750,"acceptFC":236594,"rejectFC":276210,"rejectIv":32199,"rejectOp":32199},
+{"id":"ucldMeanScaler.c:clock","p":0.7278696778129127,"accept":34457,"reject":136614,"acceptFC":34431,"rejectFC":136358,"rejectIv":0,"rejectOp":0},
+{"id":"relaxedUpDownOperator.c:clock","p":0.921199588498352,"accept":106934,"reject":405695,"acceptFC":106724,"rejectFC":405038,"rejectIv":214928,"rejectOp":0},
+{"id":"FrequenciesExchanger.s:Subset3","p":0.05909662757561011,"accept":4512,"reject":12699,"acceptFC":4490,"rejectFC":12683,"rejectIv":0,"rejectOp":0},
+{"id":"FrequenciesExchanger.s:Subset2","p":0.02940874875212496,"accept":3722,"reject":13405,"acceptFC":3702,"rejectFC":13391,"rejectIv":2149,"rejectOp":2149},
+{"id":"FrequenciesExchanger.s:Subset1","p":0.04140336027980101,"accept":4922,"reject":12216,"acceptFC":4908,"rejectFC":12210,"rejectIv":0,"rejectOp":0}
+]}
+-->
