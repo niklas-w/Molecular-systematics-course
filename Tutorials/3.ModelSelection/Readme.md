@@ -75,7 +75,7 @@ Now click on ***Save Parameters*** and click ok. Now you should see this:
 
 Now in the ***Description*** write `PF1` and click on ***Save and Run Task***. Click ok. You will see this:
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres7.png" alt="Cipres7" width="800"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres7.jpg" alt="Cipres7" width="800"></p>
 
 Here you can see that your task is "Running"! Refresh the page from time to time to see when the job is done!
 
