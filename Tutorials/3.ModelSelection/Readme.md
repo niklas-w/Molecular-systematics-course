@@ -163,4 +163,4 @@ END;
 
 ```
 
-Delete these 2 blocks! We don´t need them. Now replace it with the MrBayes lock created by *PartitionFinder*.
+Delete these 2 blocks! We don´t need them. Now replace it with the MrBayes lock created by *PartitionFinder*. Save it as `DatasetMB.nex`. We will be using this later. 
