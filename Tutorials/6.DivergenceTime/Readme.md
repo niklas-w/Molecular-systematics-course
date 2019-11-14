@@ -2,7 +2,7 @@
 
 # Divergence Time Inference with BEAST 2
 
-In previous days we saw how to prepare molecular datasets, how to find the best partitioning scheme and best substitution model; and we finally saw how to infere phylogenies using **Baysian** and **Maximum Likeliehood** approaches. We very briefly saw how to interpret the obtained trees and how to check the obtained results.
+In previous days we saw how to prepare molecular datasets, how to find the best partitioning scheme and best substitution model; and we finally saw how to infere phylogenies using **Bayesian** and **Maximum Likeliehood** approaches. We very briefly saw how to interpret the obtained trees and how to check the obtained results.
 
 In this tutorial, we will demonstrate how time-calibrated phylogenies can be inferred using a Bayesian approach. For this we will use the program BEAST2, which is a cross-platform program for Bayesian phylogenetic analysis of molecular sequences. BEAST 2 includes a graphical user-interface for setting up standard analyses and a suit of programs for analysing the results.
 
