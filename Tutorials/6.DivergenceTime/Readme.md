@@ -40,7 +40,7 @@ end;
 
 Copy/Paste it at the end of your nexus file and save it as `DatasetBEAST.nex`. Now we want to create **BEAST**'s comand file which is a `\*.xml` file. This is done using the program **BEAUti**.
 
-Open **BEAUti** from the BEAST2 folder, and import the alignment. To do so, click "Import Alignment" from the "File" menu and select the dataset.nex or by clicking the "+ symbol" and "add aligment". The BEAUti window should then look as shown in the screenshot below.
+Open **BEAUti** from the BEAST2 folder, and import the alignment. To do so, click on **"File"** and click on **"Import Alignment"**. Find your alignment file called `DatasetBEAST.nex` and import it. The BEAUti window should then look as shown in the screenshot below.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast1.png" alt="Beast1" width="600"></p>
 
