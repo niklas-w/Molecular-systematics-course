@@ -44,9 +44,9 @@ search = greedy;
 
 ```
 
+For *ALIGNMENT FILE* section you have to provide the name of the alignment file which is in this case `Dataset.phy`. But in this case as we are going to run the job on an online platform, the platform ask us to use `alignment = infile.phy;`. In the *DATA BLOCKS* you have to use the partition information we created yesterday and saved as `partitionsCodon.txt`. Take a look at the other options, what else you can modify?
 
-
-We are also going to use an online platform to run *PartitionFinder*. The platform that we are going to use now is called *CIPRES*. It is a very useful online platform where you can run plenty of other programs also. But you need to register first, so click and open (in a new window) the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action). Ypu will see something like the next image. If you dont already have an account click or the red rectangle and register.
+We are going to use an online platform to run *PartitionFinder* as running it on your computer need spending some extra time for the installation step. The platform that we are going to use now is called *CIPRES*. It is a very useful online platform where you can run plenty of other programs also. But you need to register first, so click and open (in a new window) the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action). You will see something like the next image. If you don’t have an account already, click or the red rectangle and register.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres.png" alt="Cipres" width="800"></p>
 
