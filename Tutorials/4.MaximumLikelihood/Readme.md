@@ -61,28 +61,17 @@ Wingless_aligned.phy
 
 One of the advantages of *raxmlGUI 2.0* is that you can select the number of processors to work with and, therefore, on computers with multiple processors, this greatly accelerates the calculation process. This is selected in the red rectangle at top right of the next picture (choose the maximum number you have there):
  
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML1.jpg" alt="RAxML1" width="600"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML1.jpg" alt="RAxML1" width="800"></p>
 
-The other red rectangle is where you can click to upload your alignments. Click there and upload your phylip format alignments. RAxML is a program that only allows the implementation of 4 nucleotide evolutionary models: GTR; GTR+G; GTR+I; GTR+G+I. For this exercise choose GTR+G+I.
+The other red rectangle is where you can click to upload your alignments. Click there and upload your phylip format alignments. RAxML is a program that only allows the implementation of 4 nucleotide evolutionary models: GTR; GTR+G (GTRGAMMA); GTR+G+I (GTRGAMMAI); GTR+I (GTRI). For this exercise choose GTR+G+I.
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML2.png" alt="RAxML2" width="600"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RaxML2.png" alt="RaxML2" width="800"></p>
 
-Once you upload the alignment, choose the type of *analysis* that in our case is going to be an ML+rapid bootstrap. 
+Once you upload the alignment, choose the type of *analysis* that in our case is going to be an ML+rapid bootstrap. Now you will be modifying the substitution model to *GTRGAMMAI* in the smaller red rectangle. Then select *reps* which indicates the number of bootstrap replicates we want to do. In this practical we will leave it at 100 but normally it is advisable to do 1000. 
 
-Then select *reps* which indicates the number of bootstrap replicates we want to do. In this practical we will leave it at 100 but normally it is advisable to do 1000. 
+*BS brL* Indicates whether you want to store the branch lengths on each of the bootstrap trees. This increases the computing time and therefore we leave it at default. Now define the output folder in the bigger red recangle and name your output `RaxMLout`. The *outgroup* window allows you to select the outgroup. It is not necessary to define an outgroup a priori. Now click run! this will show you the program running on the console part.
 
-*BS brL* Indicates whether you want to store the branch lengths on each of the bootstrap trees. This increases the computing time and therefore we leave it at default.
-
-The *outgroup* window allows you to select the outgroup. It is not necessary to define an outgroup a priori. 
-
-Finally, there is a window with the evolutionary models. For DNA you can only choose one of the 4 models: GTR; GTR + G (GTRGAMMA); GTR + G + I (GTRGAMMAI); GTR + I (GTRI). According to the author of RAxML if the Gamma is implemented, it is no longer necessary to implement I (invariant sites). 
-
-To incorporate partitions by gene we only need to upload the diffente gene files and the program automatically creates a concatenated alignment.
-Finally, we can proceed with *Run* RAxML to start the tree search.
-
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML3.png" alt="RAxML3" width="600"></p>
-
-Once a job is finished we have created several files. The file *.tre* is the one that contains the best inferred tree with the boostrap values for the nodes. Open the file *.tre* with the FigTree program. Check the bootstrap values in the tree and compare the corresponding ones with the result retrieved from the IQTREE analysis.
+Once a job is finished we have created several files. The file `RAxML_bipartitions.RaxMLout.tre` is the one that contains the best inferred tree with the boostrap values for the nodes. Open the *FigTree* program. Open the `RAxML_bipartitions.RaxMLout.tre` file in *FigTree*. Check the bootstrap values in the tree and compare the corresponding ones with the result retrieved from the IQTREE analysis.
 
 # Tree visualizations
 
