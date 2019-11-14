@@ -42,31 +42,34 @@ Copy/Paste it at the end of your nexus file and save it as `DatasetBEAST.nex`. N
 
 Open **BEAUti** from the BEAST2 folder, and import the alignment. To do so, click on **"File"** and click on **"Import Alignment"**. Find your alignment file called `DatasetBEAST.nex` and import it. The BEAUti window should then look as shown in the screenshot below.
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast1.png" alt="Beast1" width="600"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Beast1.png" alt="Beast1" width="800"></p>
 
 The BEAUti interface has six different tabs, of which (at the top of the window), the first one "Partitions" is currently selected. First need to specify settings regarding the partitioning in the currently open tab. 
 
-Select all four rows at the same time and click on "Link Trees" near the top of the BEAUti window. This will force BEAST2 to use the same phylogeny for all partitions, which is equivalent to concatenating the sequences as we did for maximum-likelihood analyses with RAxML in tutorial Maximum-Likelihood Phylogenetic Inference. 
+Select the 3 partitions rows and click on **Link Trees** and **Link Clock Models** near the top of the BEAUti window. This will force BEAST2 to use all partitions together to infere a tree or a clock model. Also rename **Clock Model** name of the partitions to `clock` by changing the **Clock Name** for any of the partitions and hitting enter! Do the same for the **Tree** and call it `tree`. Now you should have something like this:
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast3.png" alt="Beast3" width="600"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Beast2.png" alt="Beast2" width="800"></p>
 
-After clicking on "Link Trees", you should notice that all cells in the column to the right, under the heading "Tree" show the same value, "COI-begin", as in the screenshot below. This indicates that they now all share the same tree. You can edit the name and assign the name "tree" for instance.
+The settings in the **Partitions** tab are now complete. Now remember the result from *PartitionFinder* for each partition. These are the "Substitution Models" we want to set. I will copy it again here:
 
-Now with all rows at the same time we will click on "Link Clock Models". This means that the clock model that we will  apply to all genes. With the relaxed clock model that we will select, it means that some branches are allowed to evolve faster than other branches, but that this variation in rates is not inferred separately for each gene. After clicking on "Link Clock Models", the BEAUti window should look as shown in the screenshot below. You can also edit the name and  assign the name "clock" for instance.
+```
+Subset | Best Model | # sites    | subset id                        | Partition names
+1      | GTR+I+G    | 2075       | d1a04f8fd764b835133798f90a299406 | EF1a_pos2, COI_pos2, COI_pos1, EF1a_pos1, Wingless_pos1, Wingless_pos2                              
+2      | HKY+G      | 483        | a025b1f5af55bcc97f43596191b3173e | COI_pos3
+3      | GTR+G      | 555        | 9962ca78e0bdee4c13544ee243422b2d | EF1a_pos3, Wingless_pos3
+```
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast4.png" alt="Beast4" width="600"></p>
+Click on the **Site Model** tab next. In this tab we can specify the substitution models for all our partitions. This is a crucial step for our analysis to run well, so please pay extra attention.
 
-The settings in the "Partitions" tab are now complete.
+Select the **Subset1** partition in the panel at the left. In front of the **Subst Model** click on the drop menu and choose `GTR`. To choose the `+G` option in our model, look for **Gamma Category Count** and write `4` in front of it in the empty space. Now to apply the `+I` option in the model, look for **Proportion Invariant** option, insert an inicial value of `0.1` in the empty space and click in **estimate** box.
 
-Click on the "Site Model" tab next. In this tab we can specify the substitution models for all our partitions. Select the COI-begin partition in the panel at the left and click on the drop-down menu that currently says "JC69". Instead of the Jukes-Cantor model, use the GTR model as suggested by the model selection. Also specify "4" in the field for the "Gamma Category Count" two lines above, to use a gamma model of rate variation with four rate categories. 
+Now you should have something like this:
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast5.png" alt="Beast5" width="600"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/6.DivergenceTime/Beast3.png" alt="Beast3" width="800"></p>
 
-Still in the "Site Model" tab, select all three partitions in the panel at the left of the window. The main part of the window should then show the option "Clone from COI-begin" as in the screenshot below. Click "OK" to use the same site model for EF1a and wingless.
+Do this carefully for the other Subsets also.
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast6.png" alt="Beast6" width="600"></p>
-
-Next, click on the "Clock Model" tab. From the drop-down menu that currently says "Strict Clock", choose "Relaxed Clock Log Normal" instead. This is the most commonly used relaxed clock model in which substitution rates of individual branches are drawn from a lognormal distribution.
+Next, click on the **Clock Model** tab. From the drop-down menu choose **Relaxed Clock Log Normal** model. This is the most commonly used relaxed clock model in which substitution rates of individual branches are drawn from a lognormal distribution.
 
 <p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/Beast7.png" alt="Beast7" width="600"></p>
 
