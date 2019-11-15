@@ -41,6 +41,5 @@ begin mrbayes;
 
 	prset applyto=(all) ratepr=variable;
 	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
-	unlink brlens=(all);
 
 end;
