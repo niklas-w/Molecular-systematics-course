@@ -12,7 +12,7 @@ This is a ”user unfriendly” program, i.e. it is command driven and opens up 
 The first thing is to prepare your dataset (which is in the NEXUS format). MrBayes analyses can be done either by command line step by step or by adding all the parameters and different data partitions to your data file. You can add this information in a text editor at the end of your data file. See the following example: 
 
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes2.png" alt="MrBayes2" width="600"></p>
+<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes_examples.png" alt="MrBayes_example" width="600"></p>
 
 Open your text editor and simply add at the end of your `DatasetMB.nex` file this block:
 
