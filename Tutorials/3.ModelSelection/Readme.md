@@ -143,8 +143,8 @@ begin mrbayes;
 	lset applyto=(5) nst=6 rates=invgamma;
 	lset applyto=(6) nst=1;
 
-	prset applyto=(all) ratepr=variable;
-	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
+   	prset applyto=(all) ratepr=variable brlensp=unconstrained:Exp(100.0) shapepr=exp(1.0) tratiopr=beta(2.0,1.0);
+    	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
 
 end;
 ```
