@@ -77,7 +77,7 @@ prset applyto=(all) ratepr=variable brlensp=unconstrained:Exp(100.0) shapepr=exp
 lset applyto=(all) nst=mixed rates=gamma [invgamma];
 unlink statefreq=(all);
 unlink shape=(all) revmat=(all) tratio=(all) [pinvar=(all)];
-mcmc ngen=50000000 printfreq=1000 samplefreq=1000 nchains=4 nruns=2 savebrlens=yes [temp=0.11];
+mcmc ngen=3000000 printfreq=1000 samplefreq=1000 nchains=4 nruns=2 savebrlens=yes [temp=0.11];
  sump relburnin=yes [no] burninfrac=0.25 [2500];
  sumt relburnin=yes [no] burninfrac=0.25 [2500] contype=halfcompat [allcompat];
 END;
