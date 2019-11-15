@@ -25,7 +25,7 @@ For this tutorial we are going to use the `Dataset.phy` and a command file that 
 alignment = infile.phy;
 
 ## BRANCHLENGTHS: linked | unlinked ##
-branchlengths = unlinked;
+branchlengths = linked;
 
 ## MODELS OF EVOLUTION: all | allx | mrbayes | beast | gamma | gammai | <list> ##
 models = mrbayes;
