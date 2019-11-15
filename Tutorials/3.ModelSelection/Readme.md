@@ -103,17 +103,20 @@ In this block it tells you which alignments have been used, what we have chosen 
 ```
 Best partitioning scheme
 
-Scheme Name       : step_6
-Scheme lnL        : -14653.109375
-Scheme BIC        : 30247.2897839
-Number of params  : 117
+Scheme Name       : step_3
+Scheme lnL        : -14592.3761597
+Scheme BIC        : 29812.1330086
+Number of params  : 78
 Number of sites   : 3113
-Number of subsets : 3
+Number of subsets : 6
 
 Subset | Best Model | # sites    | subset id                        | Partition names
-1      | GTR+I+G    | 2075       | d1a04f8fd764b835133798f90a299406 | EF1a_pos2, COI_pos2, COI_pos1, EF1a_pos1, Wingless_pos1, Wingless_pos2                              
-2      | HKY+G      | 483        | a025b1f5af55bcc97f43596191b3173e | COI_pos3
-3      | GTR+G      | 555        | 9962ca78e0bdee4c13544ee243422b2d | EF1a_pos3, Wingless_pos3
+1      | GTR+I+G    | 484       | 2da80f86bd83f708144569e4c220f5c0 | COI_pos1                               
+2      | HKY+I      | 483        | 44eaa85b31bf7cdaa26d41550e25323f | COI_pos2
+3      | HKY+G      | 483        | a025b1f5af55bcc97f43596191b3173e | COI_pos3
+4      | GTR+G      | 555        | 9962ca78e0bdee4c13544ee243422b2d | EF1a_pos3, Wingless_pos3
+5      | GTR+I+G    | 695        | 9736b577fc59a152b6f08ff5ab57d236 | Wingless_pos1, Wingless_pos2, EF1a_pos1
+6      | F81        | 413        | ecdf616bfb5ddb191f696f4f945cb649 | EF1a_pos2
 ```
 
 Here in the result you have 2 sub-blocks. In the first one you get some general information about your results as the likelihood of the scheme chosen as the best, or number of parameters or .... Then you can see the subsets chosen as the best scheme for partitioning. *Were you correct in your guess?* 
@@ -123,20 +126,25 @@ Next you see different blocks which can be used for running different programs. 
 ```
 begin mrbayes;
 
-	charset Subset1 = 1453-2690\3 2-1450\3 1-1450\3 1452-2690\3 2691-3113\3 2692-3113\3;
-	charset Subset2 = 3-1450\3;
-	charset Subset3 = 1451-2690\3 2693-3113\3;
+	charset Subset1 = 1-1450\3;
+	charset Subset2 = 2-1450\3;
+	charset Subset3 = 3-1450\3;
+	charset Subset4 = 1451-2690\3 2693-3113\3;
+	charset Subset5 = 2691-3113\3 2692-3113\3 1452-2690\3;
+	charset Subset6 = 1453-2690\3;
 
-	partition PartitionFinder = 3:Subset1, Subset2, Subset3;
+	partition PartitionFinder = 6:Subset1, Subset2, Subset3, Subset4, Subset5, Subset6;
 	set partition=PartitionFinder;
 
 	lset applyto=(1) nst=6 rates=invgamma;
-	lset applyto=(2) nst=2 rates=gamma;
-	lset applyto=(3) nst=6 rates=gamma;
+	lset applyto=(2) nst=2 rates=propinv;
+	lset applyto=(3) nst=2 rates=gamma;
+	lset applyto=(4) nst=6 rates=gamma;
+	lset applyto=(5) nst=6 rates=invgamma;
+	lset applyto=(6) nst=1;
 
 	prset applyto=(all) ratepr=variable;
 	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
-	unlink brlens=(all);
 
 end;
 ```
@@ -168,9 +176,12 @@ Delete these 2 blocks! We don´t need them. Now replace them with the MrBayes bl
 Take a look again to the result of *PartitionFinder* in your text editor. Look at the block for *RaxML*. It should be something like this:
 
 ```
-DNA, Subset1 = 1453-2690\3, 2-1450\3, 1-1450\3, 1452-2690\3, 2691-3113\3, 2692-3113\3
-DNA, Subset2 = 3-1450\3
-DNA, Subset3 = 1451-2690\3, 2693-3113\3
+DNA, Subset1 = 1-1450\3
+DNA, Subset2 = 2-1450\3
+DNA, Subset3 = 3-1450\3
+DNA, Subset4 = 1451-2690\3, 2693-3113\3
+DNA, Subset5 = 2691-3113\3, 2692-3113\3, 1452-2690\3
+DNA, Subset6 = 1453-2690\3
 ```
 
 Save this to a new \*.txt file and call it `partitionsPF.txt`. This will be useful for running *RaxML* in *CIPRES* for example.
