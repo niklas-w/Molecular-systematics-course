@@ -111,7 +111,7 @@ Number of sites   : 3113
 Number of subsets : 6
 
 Subset | Best Model | # sites    | subset id                        | Partition names
-1      | GTR+I+G    | 484       | 2da80f86bd83f708144569e4c220f5c0 | COI_pos1                               
+1      | GTR+I+G    | 484        | 2da80f86bd83f708144569e4c220f5c0 | COI_pos1                               
 2      | HKY+I      | 483        | 44eaa85b31bf7cdaa26d41550e25323f | COI_pos2
 3      | HKY+G      | 483        | a025b1f5af55bcc97f43596191b3173e | COI_pos3
 4      | GTR+G      | 555        | 9962ca78e0bdee4c13544ee243422b2d | EF1a_pos3, Wingless_pos3
