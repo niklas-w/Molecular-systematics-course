@@ -19,11 +19,32 @@ Open your text editor and simply add at the end of your `DatasetMB.nex` file thi
 ```
 begin mrbayes;
 
-mcmc ngen=5000000 printfreq=1000 samplefreq=1000 nchains=4 nruns=2 savebrlens=yes;
-sump relburnin=yes burninfrac=0.2;
-sumt relburnin=yes burninfrac=0.2 contype=halfcompat;
+	charset Subset1 = 1-1450\3;
+	charset Subset2 = 2-1450\3;
+	charset Subset3 = 3-1450\3;
+	charset Subset4 = 1451-2690\3 2693-3113\3;
+	charset Subset5 = 2691-3113\3 2692-3113\3 1452-2690\3;
+	charset Subset6 = 1453-2690\3;
 
-end;
+	partition PartitionFinder = 6:Subset1, Subset2, Subset3, Subset4, Subset5, Subset6;
+	set partition=PartitionFinder;
+    
+    set autoclose=yes;
+
+	lset applyto=(1) nst=6 rates=invgamma;
+	lset applyto=(2) nst=2 rates=propinv;
+	lset applyto=(3) nst=2 rates=gamma;
+	lset applyto=(4) nst=6 rates=gamma;
+	lset applyto=(5) nst=6 rates=invgamma;
+	lset applyto=(6) nst=1;
+
+    prset applyto=(all) ratepr=variable brlensp=unconstrained:Exp(100.0) shapepr=exp(1.0) tratiopr=beta(2.0,1.0);
+    unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
+
+    mcmc ngen=3000000 printfreq=1000 samplefreq=1000 nchains=4 nruns=2 savebrlens=yes [temp=0.11];
+    sump relburnin=yes [no] burninfrac=0.25 [2500];
+    sumt relburnin=yes [no] burninfrac=0.25 [2500] contype=halfcompat [allcompat];
+END;
 ```
 
 After you prepare the NEXUS file, save it as `DatasetMBrun.nex`. Next, open a terminal, run MrBayes and finally run your analysis by writing ”Execute" filename (provide the path of your file). 
