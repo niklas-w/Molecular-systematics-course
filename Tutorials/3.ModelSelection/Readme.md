@@ -90,7 +90,7 @@ Now we want to download the \*.zip file marked with the red rectangle again. Dow
 Settings used
 
 alignment         : ./infile.phy
-branchlengths     : unlinked
+branchlengths     : linked
 models            : JC, K80, SYM, F81, HKY, GTR, JC+G, K80+G, SYM+G, F81+G, HKY+G, GTR+G, JC+I, K80+I, SYM+I, F81+I, .........
 model_selection   : bic
 search            : greedy
