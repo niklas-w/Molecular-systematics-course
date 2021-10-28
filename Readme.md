@@ -4,14 +4,14 @@ By Systematic Biology Group, Lund University
 
 ## **Introduction**
 
-In this intense course we will introduce the basics of phylogenetics, covering both theory and practice. The idea behind the course is that the student gets an overview of the actual methods and learns through hands on exercises to use some of the most used computer programs to study the phylogeny of any group using genetic information.
+In this intensive course we will introduce the basics of phylogenetics, covering both theory and practice. The idea behind the course is that the student gets an overview of the actual methods and learns through hands on exercises to use some of the most used computer programs to study the phylogeny of any group using genetic information.
 
 ## **Program**
 
 **Location:** D227 (Retina), Biology Building, Sölvegatan 35, 223 62 Lund
 
 
-| Hours\Days | 13th | 14th | 15th |
+| Hours\Days | 15th | 16th | 17th |
 | ---------- | ---- | ---- | ---- |
 | 9:00-10:30 | Lecture 1: Introduction (NW) | Lecture 3: Introduction to model based methods (JR) | Lecture 5: Properties of DNA data and assessing robustness of hypotheses (JR) |
 | 10:30-11:00 | Fika | Fika | Fika |
